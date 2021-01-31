@@ -1,10 +1,14 @@
-
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import GlobalStyle from "./globalStyles";
+import Home from "./views";
 function App() {
   return (
-    <div className="App">
-    <h1>Alero Website</h1>
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Switch>
+        <Route path="/" component={Home} exact/>
+      </Switch>
+    </Router>
   );
 }
 
