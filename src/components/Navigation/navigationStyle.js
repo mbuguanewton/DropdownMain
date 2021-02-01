@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom'
+
 export const Nav = styled.nav`
   height: 70px;
   background: rgba(249, 180, 40, 0.4);
@@ -53,4 +53,8 @@ export const NavBtn = styled.div`
   border: 3px solid #3a7a44;
   border-radius: 15px;
   padding: 5px 15px;
+  @media all and (max-width: 797px){
+    padding: 5px 10px;
+    font-size: 13px;
+  }
 `;

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
+import bgImageSmall from '../../../assets/backgroundIcons/Union.svg';
+import bgImageBig from '../../../assets/backgroundIcons/BigUnion.svg';
 export const HeroWrapper = styled.section`
   width: 100%;
   height: 100vh;
@@ -17,20 +18,53 @@ width:100%;
 height:100%;
 
 `;
+export const BgWrap = styled.div`
+position:absolute;
+right:0;
+`;
 
+export const BgImage = styled.div`
+  background: url(${bgImageSmall}) no-repeat;
+  height: 273px;
+  width: 130px;
+
+  @media all and (min-width: 768px) {
+    background: url(${bgImageSmall}) no-repeat;
+    background-size: contain;
+    height: 501px;
+    width: 240px;
+    position: relative;
+    top: 40px;
+  }
+
+  @media all and (min-width: 1056px) {
+    background: url(${bgImageBig}) no-repeat;
+    background-size: contain;
+    height: 501.31px;
+    width: 503.59px;
+    top: 20px;
+  }
+`;
 export const LogoSection = styled.div`
   display: flex;
   flex-direction: column;
-  
+
   position: relative;
-  left: 40px;
+  left: 4vw;
+  @media all and (min-width: 581px) {
+    left: 11vw;
+  }
 `;
 
 export const Logo = styled.img`
-width: 95px;
-height:95px;
-position:relative;
-left: 26.22px;
+  width: 95px;
+  height: 95px;
+  position: relative;
+  left: 4vw;
+  @media all and (min-width: 768px){
+      left: 20px;
+      margin-top: 60px;
+  }
 `;
 
 export const CompanyName = styled.span`
@@ -44,17 +78,32 @@ export const CompanyName = styled.span`
 `;
 
 export const ContentSection = styled.div`
-position:relative;
-left: 40px;
+  position: relative;
+  left: 7vw;
+
+  @media all and (min-width: 581px){
+      left: 12vw;
+  }
 `;
 
 export const Content = styled.h4`
   width: 290px;
   height: 193px;
-  font-weight:600;
-  font-size:33.66px;
-  line-height:43.16px;
+  font-weight: 600;
+  font-size: 33.66px;
+  line-height: 43.16px;
   margin-top: 48px;
+  @media all and (min-width: 581px) {
+    width: 390px;
+    
+    height: 163px;
+  }
+  @media all and (min-width:717px){
+      width:617px;
+  }
+  @media all and (min-width:768px){
+      height: 73px;
+  }
 `;
 
 export const ContentSubText = styled.p`
@@ -71,6 +120,13 @@ width: 290px;
 export const ButtonWrapper = styled.div`
   margin-top: 78px;
   text-align:center;
+
+  @media all and (min-width:768px){
+      text-align: left;
+      position:relative;
+      left: 11vw;
+      margin-top: 90px;
+  }
 `;
 
 export const Button = styled(Link)`

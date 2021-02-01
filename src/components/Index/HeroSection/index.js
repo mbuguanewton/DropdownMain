@@ -11,11 +11,16 @@ import {
   ContentSubText,
   ButtonWrapper,
   Button,
+  BgWrap,
+  BgImage
 } from "./HeroStyles";
 const HeroSection = () => {
   return (
     <HeroWrapper>
       <HeroContainer>
+      <BgWrap>
+      <BgImage/>
+      </BgWrap>
         <LogoSection>
           <Logo src={AleroLogo} />
           <CompanyName>ALERO</CompanyName>
