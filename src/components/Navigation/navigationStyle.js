@@ -2,14 +2,8 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom'
 export const Nav = styled.nav`
   height: 70px;
-  background: linear-gradient(
-    180deg,
-    rgba(249, 180, 40, 0.4) 0%,
-    rgba(249, 180, 40, 0.2627) 32.81%,
-    rgba(249, 180, 40, 0) 100%
-  );
+  background: rgba(249, 180, 40, 0.4);
   z-index: 2;
- 
 `;
 
 export const MobileIcon = styled.div`
@@ -19,14 +13,14 @@ export const MobileIcon = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-right: 40px;
-  color: blue;
+  color: #264d2d;
   width: 40px;
   float: right;
   height: 40px;
   position: relative;
   top: 10px;
   z-index: 1;
-  opacity: ${({activeMobile})=>(activeMobile ? '0' : '100%')};
+  opacity: ${({ activeMobile }) => (activeMobile ? "0" : "100%")};
   @media all and (min-width: 768px) {
     display: none;
   }

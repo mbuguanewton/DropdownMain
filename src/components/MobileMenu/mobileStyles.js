@@ -7,12 +7,7 @@ export const MobileMenuContainer = styled.aside`
   transition: all 0.2s ease-in-out;
   opacity: ${({ mobileActive }) => (mobileActive ? "100%" : "0")};
   top:${({ mobileActive }) => (mobileActive ? "0" : "-100%")}; 
-  background: linear-gradient(
-    180deg,
-    rgba(249, 180, 40, 0.6) 0%,
-    rgba(249, 180, 40, 0.2687) 32.81%,
-    rgba(249, 180, 40, 0) 100%
-  );
+  background: rgba(200, 180, 46, 1);
   z-index:5;
   overflow:hidden;
    @media all and (min-width: 768px) {

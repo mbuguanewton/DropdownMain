@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import HeroSection from "../components/Index/HeroSection";
 import MobileMenu from "../components/MobileMenu";
 import Navigation from "../components/Navigation";
 
@@ -12,6 +13,7 @@ const Home = () => {
     <>
       <MobileMenu mobileActive={openMobileMenu} toggle={toggle} />
       <Navigation toggle={toggle} mobileActive={openMobileMenu} />
+      <HeroSection/>
     </>
   );
 };
