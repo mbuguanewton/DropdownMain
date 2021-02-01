@@ -21,14 +21,14 @@ export const MobileIcon = styled.div`
   top: 10px;
   z-index: 1;
   opacity: ${({ activeMobile }) => (activeMobile ? "0" : "100%")};
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 999px) {
     display: none;
   }
 `;
 
 export const NavMenuWrap = styled.div`
   
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 1000px) {
     display: none;
   }
 `;

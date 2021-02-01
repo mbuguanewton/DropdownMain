@@ -13,7 +13,7 @@ export const SideMenuLink = styled(Link)`
   position: relative;
   align-items: center;
  
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 1000px) {
     display: none;
   }
 `;

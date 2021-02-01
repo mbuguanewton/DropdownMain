@@ -10,7 +10,7 @@ export const MobileMenuContainer = styled.aside`
   background: rgba(200, 180, 46, 1);
   z-index:5;
   overflow:hidden;
-   @media all and (min-width: 768px) {
+   @media all and (min-width: 1000px) {
     display: none;
   }
 `;
@@ -51,7 +51,7 @@ position: relative;
 top: 80px;
 width:100%;
 z-index: 10;
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 1000px) {
     display: none;
   }
 `;
