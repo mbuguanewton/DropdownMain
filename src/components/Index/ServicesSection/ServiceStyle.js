@@ -27,7 +27,7 @@ export const ContentWrapper = styled.div`
   @media all and (min-width: 505px) {
     width: 80%;
     margin: auto;
-    margin-bottom: 5 0px;
+    margin-bottom: 50px;
   }
   @media all and (min-width: 613px) {
     width: 90%;
