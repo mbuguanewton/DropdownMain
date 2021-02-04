@@ -27,7 +27,7 @@ export const ContentWrapper = styled.div`
   @media all and (min-width: 505px) {
     width: 80%;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 5 0px;
   }
   @media all and (min-width: 613px) {
     width: 90%;
@@ -72,6 +72,12 @@ export const ContentImage = styled.div`
     background-size: cover;
     background-position: center;
   }
+
+  @media all and (min-width:1300px){
+    width: 80%;
+    height: 556px;
+    margin-left: 80px;
+  }
 `;
 
 export const Image = styled.img`
@@ -105,13 +111,26 @@ export const Image = styled.img`
     margin-left: ${({ type }) => (type === "screen" ? "10%" : "0px")};
     top: ${({ type }) => (type === "screen" ? "150px;" : "84px")};
   }
+  @media all and (min-width: 1000px) {
+    width: ${({ type }) => (type === "screen" ? "426px" : "320px")};
+    height: ${({ type }) => (type === "screen" ? "276.68px" : "357px")};
+    margin-left: ${({ type }) => (type === "screen" ? "5%" : "0px")};
+
+    top: ${({ type }) => (type === "screen" ? "150px;" : "84px")};
+  }
+  @media all and (min-width: 1300px) {
+    width: ${({ type }) => (type === "screen" ? "586px" : "420px")};
+    height: ${({ type }) => (type === "screen" ? "376.68px" : "477px")};
+    margin-left: ${({ type }) => (type === "screen" ? "5%" : "0px")};
+
+    top: ${({ type }) => (type === "screen" ? "150px;" : "84px")};
+  }
 `;
 
 export const ContentDetails = styled.div`
-
-@media all and (min-width: 613px) {
+  @media all and (min-width: 613px) {
     padding-top: 46px;
-}
+  }
   @media all and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -121,13 +140,23 @@ export const ContentDetails = styled.div`
     grid-gap: 2rem;
   }
 
-  @media all and (min-width:1000px){
-      display:block;
-      width: 480px;
-      height: 459px;
-      position: absolute;
-      top: 118px;
-      background: #ffffff;
+  @media all and (min-width: 1000px) {
+    display: block;
+    width: 456px;
+    height: 395px;
+    position: absolute;
+    top: 178px;
+    background: #ffffff;
+    margin-left: ${({ type }) => (type === "screen" ? "55vw" : "-30px")};
+   
+  }
+  @media all and (min-width: 1300px) {
+    display: block;
+    width: 576px;
+    height: 485px;
+    position: absolute;
+    top: 178px;
+    background: #ffffff;
   }
 `;
 
@@ -149,12 +178,19 @@ export const ContentDetailText = styled.p`
   @media all and (min-width: 768px) {
     width: 381px;
   }
+  @media all and (min-width:1000px){
+    width:90%;
+    margin-bottom: 60px;
+  }
+
 `;
 
 export const ServicesContentWrapper = styled.div`
   @media all and (min-width: 613px) {
- 
-    
+  }
+  @media all and (min-width: 1000px) {
+   
+    margin-bottom: 40px;
   }
 `;
 export const ContentDetailServices = styled.p`
@@ -171,13 +207,15 @@ export const ContentDetailServices = styled.p`
   @media all and (min-width: 768px) {
     width: 260px;
   }
+  @media all and (min-width: 1000px) {
+    width: 90%;
+  }
 `;
 
 export const ContentDetailButton = styled.div`
   display: none;
 
   @media all and (min-width: 768px) {
-   
     background: radial-gradient(135% 135% at 5.8% 0%, #a5c77d 0%, #3a7a44 100%);
 
     border: 2px solid
@@ -188,11 +226,15 @@ export const ContentDetailButton = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 15.595px;
-    margin-left:20px;
+    margin-left: 20px;
     margin-top: 20px;
   }
-  @media all and (min-width: 871px){
-      margin-left: 15%;
+  @media all and (min-width: 871px) {
+    margin-left: 15%;
+  }
+  @media all and (min-width: 1000px) {
+    margin-left: 5%;
+    
   }
 `;
 

@@ -29,7 +29,7 @@ const ServicesSection = ({ serviceData }) => {
               <ContentImage background={data.background}>
                 <Image src={data.Image} type={data.type} />
               </ContentImage>
-              <ContentDetails>
+              <ContentDetails type={data.type}>
                 <ContentDetailText type={data.type}>
                   {data.text}
                 </ContentDetailText>
