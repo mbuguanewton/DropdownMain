@@ -3,12 +3,16 @@ import GlobalStyle from "./globalStyles";
 import Home from "./views";
 function App() {
   return (
-    <Router>
+    <>
+    
+     <Router>
       <GlobalStyle />
       <Switch>
         <Route path="/" component={Home} exact/>
       </Switch>
     </Router>
+    </>
+   
   );
 }
 

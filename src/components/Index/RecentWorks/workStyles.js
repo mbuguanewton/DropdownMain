@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const WorkContainer= styled.section`
 height:100%;
 width:100%;
+overflow:hidden;
 `;
 
 export const WorkTitle = styled.div`

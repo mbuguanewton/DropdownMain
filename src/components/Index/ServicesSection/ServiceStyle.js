@@ -90,13 +90,13 @@ export const Image = styled.img`
   margin-right: ${({ type }) => (type === "screen" ? "0px" : "40px")};
 
   @media all and (max-width: 349px) {
-    top: ${({ type }) => (type === "screen" ? "80px;" : "53px")};
+    top: ${({ type }) => (type === "screen" ? "80px" : "53px")};
   }
   @media all and (min-width: 366px) {
-    top: ${({ type }) => (type === "screen" ? "70px;" : "36px")};
+    top: ${({ type }) => (type === "screen" ? "70px" : "36px")};
   }
   @media all and (min-width: 372px) {
-    top: ${({ type }) => (type === "screen" ? "70px;" : "58px")};
+    top: ${({ type }) => (type === "screen" ? "70px" : "58px")};
   }
   @media all and (min-width: 443px) {
     margin-left: ${({ type }) => (type === "screen" ? "20%" : "0px")};
