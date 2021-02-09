@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import HeroSection from "../components/Index/HeroSection";
+import ProcessSection from "../components/Index/Process";
 import RecentWork from "../components/Index/RecentWorks";
 import ServicesSection from "../components/Index/ServicesSection";
 import TechSection from "../components/Index/Technologies";
@@ -9,6 +10,9 @@ import Navigation from "../components/Navigation";
 import {WorkData} from '../data/RecentWorkData';
 import {ServicesData} from '../data/ServicesData';
 import {ImageData, InfoData} from '../data/TechData';
+import {ProcessData} from '../data/ProcessData';
+import {Testimonies} from '../data/TestimoniesData';
+import TestimonySection from "../components/Index/Testimonies";
 const Home = () => {
   const [openMobileMenu, setMobileMenu] = useState(false);
   const [scrollWidth, setScrollWidth] = useState();
@@ -39,6 +43,8 @@ const Home = () => {
       <RecentWork recentData={WorkData}/>
       <ServicesSection serviceData={ServicesData}/>
       <TechSection LogoData={ImageData} leftCalc={scrollWidth} InfoData={InfoData}/>
+      <ProcessSection leftCalc={scrollWidth} ProcessData={ProcessData}/>
+      <TestimonySection TestimonyData={Testimonies}/>
     </>
   );
 };
