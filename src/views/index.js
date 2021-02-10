@@ -14,6 +14,8 @@ import {ProcessData} from '../data/ProcessData';
 import {Testimonies} from '../data/TestimoniesData';
 import TestimonySection from "../components/Index/Testimonies";
 import SupportSection from "../components/Index/support";
+import FooterSection from "../components/Footer";
+import {FooterServices} from '../data/footerData';
 const Home = () => {
   const [openMobileMenu, setMobileMenu] = useState(false);
   const [scrollWidth, setScrollWidth] = useState();
@@ -47,6 +49,7 @@ const Home = () => {
       <ProcessSection leftCalc={scrollWidth} ProcessData={ProcessData}/>
       <TestimonySection TestimonyData={Testimonies}/>
       <SupportSection/> 
+      <FooterSection FServices={FooterServices}/>
     </>
   );
 };
