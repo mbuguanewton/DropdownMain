@@ -168,6 +168,7 @@ export const ContentDetailText = styled.p`
   line-height: 18.24px;
   margin-top: 46px;
   margin-bottom: ${({ type }) => (type === "screen" ? "20px" : "40px")};
+  color: #17311b;
 
   @media all and (min-width: 613px) {
     font-size: 22px;
@@ -178,11 +179,10 @@ export const ContentDetailText = styled.p`
   @media all and (min-width: 768px) {
     width: 381px;
   }
-  @media all and (min-width:1000px){
-    width:90%;
+  @media all and (min-width: 1000px) {
+    width: 90%;
     margin-bottom: 60px;
   }
-
 `;
 
 export const ServicesContentWrapper = styled.div`

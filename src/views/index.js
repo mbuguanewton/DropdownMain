@@ -13,6 +13,7 @@ import {ImageData, InfoData} from '../data/TechData';
 import {ProcessData} from '../data/ProcessData';
 import {Testimonies} from '../data/TestimoniesData';
 import TestimonySection from "../components/Index/Testimonies";
+import SupportSection from "../components/Index/support";
 const Home = () => {
   const [openMobileMenu, setMobileMenu] = useState(false);
   const [scrollWidth, setScrollWidth] = useState();
@@ -45,6 +46,7 @@ const Home = () => {
       <TechSection LogoData={ImageData} leftCalc={scrollWidth} InfoData={InfoData}/>
       <ProcessSection leftCalc={scrollWidth} ProcessData={ProcessData}/>
       <TestimonySection TestimonyData={Testimonies}/>
+      <SupportSection/> 
     </>
   );
 };
