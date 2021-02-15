@@ -22,4 +22,4 @@ const SupportSection = () => {
   );
 };
 
-export default SupportSection;
+export  {SupportSection};

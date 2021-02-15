@@ -40,4 +40,4 @@ const RecentWork = ({recentData}) => {
   );
 };
 
-export default RecentWork;
+export {RecentWork};

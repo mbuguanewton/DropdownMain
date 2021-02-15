@@ -39,4 +39,4 @@ const ProcessSection = ({ leftCalc, ProcessData }) => {
   );
 };
 
-export default ProcessSection;
+export {ProcessSection};

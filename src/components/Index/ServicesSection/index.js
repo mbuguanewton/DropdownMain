@@ -57,4 +57,4 @@ const ServicesSection = ({ serviceData }) => {
   );
 };
 
-export default ServicesSection;
+export  {ServicesSection};

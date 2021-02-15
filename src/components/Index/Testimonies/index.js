@@ -58,4 +58,4 @@ const TestimonySection = ({ TestimonyData }) => {
   );
 };
 
-export default TestimonySection;
+export {TestimonySection};

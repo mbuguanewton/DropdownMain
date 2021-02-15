@@ -146,4 +146,4 @@ const TechSection = ({ LogoData, leftCalc, InfoData }) => {
   );
 };
 
-export default TechSection;
+export  {TechSection};
