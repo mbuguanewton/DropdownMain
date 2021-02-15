@@ -11,6 +11,7 @@ export const WorkContainer = styled.section`
 export const Wrapper = styled.div`
 width: 100%;
 height: 100%;
+margin-bottom: 112px;
 
 @media all and (min-width:1000px){
   margin-bottom: 112px;
@@ -23,11 +24,15 @@ export const WorkTitle = styled.div`
   font-weight: bold;
   font-size: 21px;
   line-height: 29px;
-
-  @media all and (min-width: 1300px){
-    text-align:left;
+  @media all and (min-width: 1000px) {
+    font-size: 45.47px;
+    line-height: 69px;
+  }
+  @media all and (min-width: 1300px) {
+    text-align: left;
     width: 90%;
-    margin:auto;
+    font-size: 21px;
+    margin: auto;
     margin-bottom: 23px;
   }
 `;
