@@ -17,6 +17,7 @@ import {
   SliderLeft,
   SliderRight,
   NavigationWrapper,
+  Wrapper
 } from "./techstyles";
 
 SwiperCore.use([Navigation, EffectFlip]);
@@ -46,7 +47,8 @@ const TechSection = ({ LogoData, leftCalc, InfoData }) => {
 
   return (
     <TechWrapper>
-      <TechTitle>Technologies & Tools</TechTitle>
+    <Wrapper>
+     <TechTitle>Technologies & Tools</TechTitle>
       <TechContainer>
         {LogoData.map((data, index) => {
           return (
@@ -54,9 +56,15 @@ const TechSection = ({ LogoData, leftCalc, InfoData }) => {
               area={data.type}
               SouterWidth={data.SouterWidth}
               SouterHeight={data.SouterHeight}
+              MouterWidth = {data.MouterWidth}
+              MouterHeight={data.MouterHeight}
+              LouterWidth={data.LouterWidth}
+              LouterHeight={data.LouterHeight}
               leftCalc={leftCalc}
               smSizeLeft={data.smSizeLeft}
               smSizetop={data.smSizetop}
+              mmSizeLeft={data.mmSizeLeft}
+              mmSizeTop={data.mmSizeTop}
               mediumSizetop={data.mediumSizetop}
               mediumSizeLeft={data.mediumSizeLeft}
             >
@@ -65,6 +73,10 @@ const TechSection = ({ LogoData, leftCalc, InfoData }) => {
                 alt={data.type}
                 Swidth={data.Swidth}
                 Sheight={data.Sheight}
+                Mwidth={data.Mwidth}
+                Mheight={data.Mheight}
+                Lwidth={data.Lwidth}
+                Lheight={data.Lheight}
               />
             </TechImageWrap>
           );
@@ -142,6 +154,8 @@ const TechSection = ({ LogoData, leftCalc, InfoData }) => {
           </SliderNavigation>
         </SliderContentWrap>
       </TechContainer>
+    </Wrapper>
+     
     </TechWrapper>
   );
 };

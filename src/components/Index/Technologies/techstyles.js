@@ -1,11 +1,19 @@
 import styled from "styled-components";
 
 export const TechWrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 `;
+export const Wrapper = styled.div`
+  width: 100%;
+  height: 100%;
 
+  margin-bottom: 312px;
+  @media all and (min-width: 1300px) {
+    margin-bottom: 612px;
+  }
+`;
 export const TechTitle = styled.div`
   margin-bottom: 23px;
   text-align: center;
@@ -14,6 +22,18 @@ export const TechTitle = styled.div`
   font-size: 21px;
   line-height: 29px;
   margin-top: 20px;
+
+  @media all and (min-width: 768px) {
+    font-size: 45.47px;
+    line-height: 69px;
+  }
+  @media all and (min-width: 1300px) {
+    width: 90%;
+    font-size: 21px;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 23px;
+  }
 `;
 
 export const TechContainer = styled.div`
@@ -43,7 +63,15 @@ export const TechImageWrap = styled.div`
   top: ${({ smSizetop }) => smSizetop};
 
   @media all and (min-width: 768px) {
+    height: ${({ MouterHeight }) => MouterHeight};
+    width: ${({ MouterWidth }) => MouterWidth};
+    left: ${({ leftCalc, mmSizeLeft }) => `${leftCalc * mmSizeLeft}px`};
+    top: ${({ mmSizeTop }) => mmSizeTop};
+  }
+  @media all and (min-width: 1300px) {
     display: flex;
+    height: ${({ LouterHeight }) => LouterHeight};
+    width: ${({ LouterWidth }) => LouterWidth};
     left: ${({ leftCalc, mediumSizeLeft }) => `${leftCalc * mediumSizeLeft}px`};
     top: ${({ mediumSizetop }) => mediumSizetop} !important;
   }
@@ -52,6 +80,15 @@ export const TechImageWrap = styled.div`
 export const TechImage = styled.img`
   width: ${({ Swidth }) => Swidth};
   height: ${({ Sheight }) => Sheight};
+
+  @media all and (min-width: 768px) {
+    width: ${({ Mwidth }) => Mwidth};
+    height: ${({ Mheight }) => Mheight};
+  }
+  @media all and (min-width: 1300px) {
+    width: ${({ Lwidth }) => Lwidth};
+    height: ${({ Lheight }) => Lheight} ;
+  }
 `;
 
 export const SliderContentWrap = styled.div`
@@ -100,7 +137,7 @@ export const SliderHead = styled.h4`
 `;
 
 export const SliderText = styled.div`
-  font-size: 12.42px;
+  font-size: 15.42px;
   color: #ababab; 
   @media all and (min-width: 549px){
   width: 504px;
