@@ -15,11 +15,13 @@ import {
   ServicesContentWrapper,
   ContentDetailOButton,
   DetailOButton,
+  Wrapper
 } from "./ServiceStyle";
 const ServicesSection = ({ serviceData }) => {
   return (
     <ServicesWrapper>
-      <ServiceTitle>Services</ServiceTitle>
+    <Wrapper>
+     <ServiceTitle>Services</ServiceTitle>
       <ServicesContainer>
         {serviceData.map((data, index) => {
           return (
@@ -53,6 +55,8 @@ const ServicesSection = ({ serviceData }) => {
           <DetailOButton>Start Now</DetailOButton>
         </ContentDetailOButton>
       </ServicesContainer>
+    </Wrapper>
+     
     </ServicesWrapper>
   );
 };

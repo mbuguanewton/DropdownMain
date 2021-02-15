@@ -6,7 +6,12 @@ export const ServicesWrapper = styled.section`
   height: 100%;
   padding-top: 50px;
 `;
+export const Wrapper = styled.div`
+width:100%;
+height: 100%;
 
+margin-bottom: 152px;
+`
 export const ServiceTitle = styled.div`
   margin-bottom: 23px;
   text-align: center;
