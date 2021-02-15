@@ -37,18 +37,17 @@ export const SupportText = styled.div`
 `;
 
 export const SupportBtnWrap = styled.div`
+  border: 2px solid white;
+  width: 181px;
+  margin: auto;
+  border-radius: 50px;
+  padding: 15px 30px;
 
-border: 2px solid white;
-width: 80%;
-margin: auto;
-border-radius: 50px;
-padding: 10px 10px;
-
-@media all and (min-width: 1000px){
+  @media all and (min-width: 1000px) {
     width: 181px;
     font-size: 15px;
     padding: 20px 40px;
-}
+  }
 `;
 
 export const Button = styled(Link)`

@@ -49,19 +49,19 @@ const FooterSection = ({ FServices }) => {
           })}
         </ServicesDetails>
 
-        <FooterDetails>
+        <FooterDetails id="discover">
           <FooterDetailTitle>Discover</FooterDetailTitle>
           <FooterContent>Blog</FooterContent>
         </FooterDetails>
 
-        <FooterDetails>
+        <FooterDetails id="support">
           <FooterDetailTitle>Support</FooterDetailTitle>
           <FooterContent>Help & Learning</FooterContent>
           <FooterContent>Support</FooterContent>
           <FooterContent>Forum</FooterContent>
         </FooterDetails>
 
-        <FooterDetails>
+        <FooterDetails id="company">
           <FooterDetailTitle>Company</FooterDetailTitle>
           <FooterContent>About Us</FooterContent>
           <FooterContent>Career</FooterContent>

@@ -8,6 +8,11 @@ export const Wrapper = styled.footer`
 export const Container = styled.div`
   width: 100%;
   height: 100%;
+
+  @media all and (min-width: 1000px) {
+    display: grid;
+    grid-template-columns: 0.8fr 0.3fr 0.2fr 0.2fr 0.2fr;
+  }
 `;
 
 export const CompanyDetails = styled.div`
@@ -17,6 +22,10 @@ export const CompanyDetails = styled.div`
   align-items: center;
   justify-content: center;
   margin: auto;
+
+  @media all and (min-width: 1000px) {
+    width: 50%;
+  }
 `;
 
 export const LogoSection = styled.img`
@@ -53,11 +62,20 @@ export const SocialMediaPlatforms = styled.div`
   margin-top: 16px;
 
   color: green;
+
+  @media all and (min-width: 500px) {
+  }
+  @media all and (min-width: 1000px) {
+    width: 200px;
+  }
 `;
 
 export const ServicesDetails = styled.div`
   text-align: center;
   margin-top: 31px;
+  @media all and (min-width: 1000px){
+    text-align: left;
+  }
 `;
 
 export const ServiceTitle = styled.h5`
@@ -75,6 +93,17 @@ export const ServiceContent = styled.p`
 export const FooterDetails = styled.div`
   text-align: center;
   margin-top: 31px;
+  @media all and (min-width: 1000px) {
+    &#discover {
+      display: none;
+    }
+    &#support {
+      text-align: left;
+    }
+    &#company {
+      text-align: left;
+    }
+  }
 `;
 
 export const FooterDetailTitle = styled.h5`
@@ -95,7 +124,7 @@ export const CopyRightSection = styled.div`
   margin-top: 20px;
   margin-bottom: 20px;
   color: #ababab;
-  text-align:center;
+  text-align: center;
   font-weight: 600;
   line-height: 14px;
 `;

@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 export const ServicesWrapper = styled.section`
-width: 100%;
-height: 100%;
-padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
 `;
 
 export const ServiceTitle = styled.div`
@@ -18,8 +18,8 @@ export const ServiceTitle = styled.div`
 `;
 
 export const ServicesContainer = styled.div`
-width:100%;
-height:100%;
+  width: 100%;
+  height: 100%;
 `;
 
 export const ContentWrapper = styled.div`
@@ -45,7 +45,7 @@ export const ContentTitle = styled.p`
   font-weight: 500;
   font-size: 16.8px;
   line-height: 17px;
-  text-align:center;
+  text-align: center;
   margin-bottom: 30px;
 `;
 
@@ -73,7 +73,7 @@ export const ContentImage = styled.div`
     background-position: center;
   }
 
-  @media all and (min-width:1300px){
+  @media all and (min-width: 1300px) {
     width: 80%;
     height: 556px;
     margin-left: 80px;
@@ -148,7 +148,6 @@ export const ContentDetails = styled.div`
     top: 178px;
     background: #ffffff;
     margin-left: ${({ type }) => (type === "screen" ? "55vw" : "-30px")};
-   
   }
   @media all and (min-width: 1300px) {
     display: block;
@@ -182,6 +181,7 @@ export const ContentDetailText = styled.p`
   @media all and (min-width: 1000px) {
     width: 90%;
     margin-bottom: 60px;
+    line-height: 25px;
   }
 `;
 
@@ -189,7 +189,6 @@ export const ServicesContentWrapper = styled.div`
   @media all and (min-width: 613px) {
   }
   @media all and (min-width: 1000px) {
-   
     margin-bottom: 40px;
   }
 `;
@@ -234,7 +233,6 @@ export const ContentDetailButton = styled.div`
   }
   @media all and (min-width: 1000px) {
     margin-left: 5%;
-    
   }
 `;
 
@@ -248,9 +246,9 @@ export const DetailButton = styled(Link)`
 
 export const ContentDetailOButton = styled.div`
   display: none;
-@media all and (min-width: 768px){
-    display:none !important;
-}
+  @media all and (min-width: 768px) {
+    display: none !important;
+  }
   @media all and (min-width: 613px) {
     background: radial-gradient(135% 135% at 5.8% 0%, #a5c77d 0%, #3a7a44 100%);
 
