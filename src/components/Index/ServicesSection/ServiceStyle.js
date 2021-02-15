@@ -86,9 +86,7 @@ export const ContentImage = styled.div`
     background-size: cover;
     background-position: center;
   }
-  @media all and (min-width: 1000px) {
-    margin-left: ${({ type }) => (type === "mobile" ? "30px" : "0")};
-  }
+ 
   @media all and (min-width: 1300px) {
     width: 90%;
     height: 556px;
@@ -159,13 +157,7 @@ export const ContentDetails = styled.div`
   }
 
   @media all and (min-width: 1000px) {
-    display: block;
-    width: 456px;
-    height: 395px;
-    position: absolute;
-    top: 178px;
-    background: #ffffff;
-    margin-left: ${({ type }) => (type === "screen" ? "55vw" : "-30px")};
+    
   }
   @media all and (min-width: 1300px) {
     display: block;
@@ -175,6 +167,7 @@ export const ContentDetails = styled.div`
     top: 178px;
     background: #ffffff;
     box-shadow: 35.2601px 35.2601px 76.1574px rgba(0, 0, 0, 0.3);
+    margin-left: ${({ type }) => (type === "screen" ? "55vw" : "-30px")};
   }
 
   @media all and (min-width: 1400px) {
