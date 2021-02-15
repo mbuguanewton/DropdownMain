@@ -7,16 +7,20 @@ overflow: hidden;
 `;
 
 export const InsideWrapper = styled.div`
-width: 100%;
-height: 100vh;
-
-@media all and (min-width: 768px){
-width: 80%;
-margin: auto;
-}
-@media all and (min-width: 1000px){
+  width: 100%;
+  height: 100%;
+  margin-bottom: 112px;
+  @media all and (min-width: 768px) {
+    width: 80%;
+    margin: auto;
+  }
+  @media all and (min-width: 1000px) {
     width: 950px;
-}
+  }
+  @media all and (min-width: 1300px){
+    width: 100%;
+    margin-bottom: 312px;
+  }
 `;
 export const TitleT = styled.h5`
   margin-bottom: 23px;
@@ -28,7 +32,11 @@ export const TitleT = styled.h5`
   margin-top: 20px;
   @media all and (min-width: 1000px) {
     text-align: left;
-    
+  }
+  @media all and (min-width: 1300px) {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 23px;
   }
 `;
 
@@ -43,6 +51,11 @@ export const SubText = styled.p`
     text-align: left;
     justify-content: left;
     font-size: 33px;
+    margin-bottom: 100px;
+  }
+  @media all and (min-width: 1300px) {
+    width: 90%;
+    margin: auto;
     margin-bottom: 100px;
   }
 `;
@@ -73,6 +86,9 @@ export const TestimonyWrapper = styled.div`
     align-items: top;
     height: 447px;
     width: 1000px;
+  }
+  @media all and (min-width: 1300px) {
+    width: 1100px;
   }
 `;
 
@@ -142,5 +158,8 @@ export const TestimonyContent = styled.p`
     line-height: 40px;
     width: 566px;
     text-align: left;
+  }
+  @media all and (min-width: 1300px) {
+    width: 766px;
   }
 `;
