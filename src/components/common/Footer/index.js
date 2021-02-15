@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import Logo from "../../assets/Icons/AleroLogo.svg";
+import Logo from "../../../assets/Icons/AleroLogo.svg";
 import {
   Wrapper,
   Container,
@@ -77,4 +77,4 @@ const FooterSection = ({ FServices }) => {
   );
 };
 
-export default FooterSection;
+export { FooterSection };

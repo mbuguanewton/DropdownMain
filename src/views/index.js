@@ -5,27 +5,26 @@ import ProcessSection from "../components/Index/Process";
 import RecentWork from "../components/Index/RecentWorks";
 import ServicesSection from "../components/Index/ServicesSection";
 import TechSection from "../components/Index/Technologies";
-import MobileMenu from "../components/MobileMenu";
-import Navigation from "../components/Navigation";
-import {WorkData} from '../data/RecentWorkData';
-import {ServicesData} from '../data/ServicesData';
-import {ImageData, InfoData} from '../data/TechData';
-import {ProcessData} from '../data/ProcessData';
-import {Testimonies} from '../data/TestimoniesData';
+import { MobileMenu, Navigation, FooterSection } from "../components/common";
+
+import { WorkData } from "../data/RecentWorkData";
+import { ServicesData } from "../data/ServicesData";
+import { ImageData, InfoData } from "../data/TechData";
+import { ProcessData } from "../data/ProcessData";
+import { Testimonies } from "../data/TestimoniesData";
 import TestimonySection from "../components/Index/Testimonies";
 import SupportSection from "../components/Index/support";
-import FooterSection from "../components/Footer";
-import {FooterServices} from '../data/footerData';
+import { FooterServices } from "../data/footerData";
 const Home = () => {
   const [openMobileMenu, setMobileMenu] = useState(false);
   const [scrollWidth, setScrollWidth] = useState();
   let scrolle;
-  useEffect(()=>{
+
+  useEffect(() => {
     scrolle = window.screen.width;
     let total = scrolle;
-    console.log('this is scroll on x',window.screen.width, total);
     setScrollWidth(total);
-  },[])
+  }, []);
   const toggle = () => {
     setMobileMenu(!openMobileMenu);
   };
@@ -33,23 +32,26 @@ const Home = () => {
   const widthChange = () => {
     scrolle = window.screen.width;
     let total = scrolle;
-    console.log("this is scroll on x", window.screen.width, total);
     setScrollWidth(total);
-  }
+  };
 
-  window.addEventListener('resize', widthChange);
+  window.addEventListener("resize", widthChange);
   return (
     <>
       <MobileMenu mobileActive={openMobileMenu} toggle={toggle} />
       <Navigation toggle={toggle} mobileActive={openMobileMenu} />
-      <HeroSection/>
-      <RecentWork recentData={WorkData}/>
-      <ServicesSection serviceData={ServicesData}/>
-      <TechSection LogoData={ImageData} leftCalc={scrollWidth} InfoData={InfoData}/>
-      <ProcessSection leftCalc={scrollWidth} ProcessData={ProcessData}/>
-      <TestimonySection TestimonyData={Testimonies}/>
-      <SupportSection/> 
-      <FooterSection FServices={FooterServices}/>
+      <HeroSection />
+      <RecentWork recentData={WorkData} />
+      <ServicesSection serviceData={ServicesData} />
+      <TechSection
+        LogoData={ImageData}
+        leftCalc={scrollWidth}
+        InfoData={InfoData}
+      />
+      <ProcessSection leftCalc={scrollWidth} ProcessData={ProcessData} />
+      <TestimonySection TestimonyData={Testimonies} />
+      <SupportSection />
+      <FooterSection FServices={FooterServices} />
     </>
   );
 };

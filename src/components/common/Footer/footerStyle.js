@@ -63,7 +63,8 @@ export const SocialMediaPlatforms = styled.div`
 
   color: green;
 
-  @media all and (min-width: 500px) {
+  @media all and (min-width: 413px) {
+    width: 210px;
   }
   @media all and (min-width: 1000px) {
     width: 200px;
