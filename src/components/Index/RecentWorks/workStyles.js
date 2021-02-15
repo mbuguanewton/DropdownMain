@@ -14,6 +14,13 @@ export const WorkTitle = styled.div`
   font-weight: bold;
   font-size: 21px;
   line-height: 29px;
+
+  @media all and (min-width: 1300px){
+    text-align:left;
+    width: 90%;
+    margin:auto;
+    margin-bottom: 23px;
+  }
 `;
 export const WorkWrapper = styled.div`
   display: grid;
@@ -22,7 +29,7 @@ export const WorkWrapper = styled.div`
 
  
   @media all and (min-width: 1300px) {
-    width: 80%;
+    width: 90%;
     margin: auto;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1.3fr 2fr;
@@ -31,6 +38,7 @@ export const WorkWrapper = styled.div`
       "insp loci";
 
     grid-column-gap: 30px;
+    
   }
 `;
 
