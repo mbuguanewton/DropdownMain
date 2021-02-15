@@ -15,6 +15,13 @@ export const ServiceTitle = styled.div`
   font-size: 21px;
   line-height: 29px;
   margin-top: 20px;
+
+  @media all and (min-width: 1300px) {
+    width: 90%;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 23px;
+  }
 `;
 
 export const ServicesContainer = styled.div`
@@ -47,6 +54,12 @@ export const ContentTitle = styled.p`
   line-height: 17px;
   text-align: center;
   margin-bottom: 30px;
+
+  @media all and (min-width: 1300px) {
+    text-align: left;
+    font-size: 33px;
+    line-height: 26px;
+  }
 `;
 
 export const ContentImage = styled.div`

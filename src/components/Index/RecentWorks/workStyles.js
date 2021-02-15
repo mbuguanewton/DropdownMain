@@ -5,8 +5,17 @@ export const WorkContainer = styled.section`
   height: 100%;
   width: 100%;
   overflow: hidden;
+
 `;
 
+export const Wrapper = styled.div`
+width: 100%;
+height: 100%;
+
+@media all and (min-width:1000px){
+  margin-bottom: 112px;
+}
+`;
 export const WorkTitle = styled.div`
   margin-bottom: 23px;
   text-align: center;

@@ -11,10 +11,12 @@ import {
   LinkTo,
   Arrow,
   WorkTitle,
+  Wrapper
 } from "./workStyles";
 const RecentWork = ({recentData}) => {
   return (
     <WorkContainer>
+    <Wrapper>
     <WorkTitle>Recent works</WorkTitle>
       <WorkWrapper>
     {recentData.map((data, index)=>{
@@ -36,6 +38,8 @@ const RecentWork = ({recentData}) => {
     })}
         
       </WorkWrapper>
+    </Wrapper>
+    
     </WorkContainer>
   );
 };
