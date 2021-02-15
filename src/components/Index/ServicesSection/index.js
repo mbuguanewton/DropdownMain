@@ -26,7 +26,7 @@ const ServicesSection = ({ serviceData }) => {
             <ContentWrapper key={data.id}>
               <ContentTitle>{data.title}</ContentTitle>
 
-              <ContentImage background={data.background}>
+              <ContentImage background={data.background} type={data.type}>
                 <Image src={data.Image} type={data.type} />
               </ContentImage>
               <ContentDetails type={data.type}>

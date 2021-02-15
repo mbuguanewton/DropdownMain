@@ -59,6 +59,7 @@ export const ContentTitle = styled.p`
     text-align: left;
     font-size: 33px;
     line-height: 26px;
+    color: #151515;
   }
 `;
 
@@ -85,11 +86,15 @@ export const ContentImage = styled.div`
     background-size: cover;
     background-position: center;
   }
-
+  @media all and (min-width: 1000px) {
+    margin-left: ${({ type }) => (type === "mobile" ? "30px" : "0")};
+  }
   @media all and (min-width: 1300px) {
-    width: 80%;
+    width: 90%;
     height: 556px;
-    margin-left: 80px;
+  }
+  @media all and (min-width: 1400px) {
+    margin-left: ${({ type }) => (type === "mobile" ? "90px" : "0")};
   }
 `;
 
@@ -164,11 +169,23 @@ export const ContentDetails = styled.div`
   }
   @media all and (min-width: 1300px) {
     display: block;
-    width: 576px;
+    width: 526px;
     height: 485px;
     position: absolute;
     top: 178px;
     background: #ffffff;
+    box-shadow: 35.2601px 35.2601px 76.1574px rgba(0, 0, 0, 0.3);
+  }
+
+  @media all and (min-width: 1400px) {
+    display: block;
+    width: 556px;
+    height: 485px;
+    position: absolute;
+    top: 178px;
+    background: #ffffff;
+    box-shadow: 35.2601px 35.2601px 76.1574px rgba(0, 0, 0, 0.3);
+    margin-left: ${({ type }) => (type === "screen" ? "58vw" : "-30px")};
   }
 `;
 
@@ -184,17 +201,22 @@ export const ContentDetailText = styled.p`
 
   @media all and (min-width: 613px) {
     font-size: 22px;
-
+    line-height: 23px;
     margin-top: 0px;
     text-align: justify;
   }
   @media all and (min-width: 768px) {
     width: 381px;
+    line-height: 23px;
   }
   @media all and (min-width: 1000px) {
     width: 90%;
     margin-bottom: 60px;
     line-height: 25px;
+  }
+  @media all and (min-width: 1300px) {
+    width: 486px;
+    margin-left: 22px;
   }
 `;
 
@@ -273,8 +295,7 @@ export const ContentDetailOButton = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 15.595px;
-    margin-left: 20px;
-    margin-top: 20px;
+   margin:auto;
   }
 `;
 
@@ -284,4 +305,10 @@ export const DetailOButton = styled(Link)`
   font-weight: 600;
   font-size: 17.0662px;
   line-height: 23px;
+  width: 100%;
+  text-align:center;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
 `;
