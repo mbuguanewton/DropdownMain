@@ -10,33 +10,46 @@ import {
   ProcessContent,
   BgLineImage,
   BgImage,
+  Wrapper,
+  ProcessText,
+  ProcessTextWrap,
 } from "./processStyles";
 const ProcessSection = ({ leftCalc, ProcessData }) => {
   return (
     <ProcessWrapper>
-      <ProcessTitle>Our Process</ProcessTitle>
-      
-      <ProcessContainer>
-        {ProcessData.map((data, index) => {
-          return (
-            <ProcessImageWrapper
-              mediumSizeLeft={data.mediumSizeLeft}
-              mediumSizetop={data.mediumSizetop}
-              leftCalc={leftCalc}
-              key={index}
-            >
-              <ProcessImage src={data.image} />
-              <ProcessContent>{data.text}</ProcessContent>
-            </ProcessImageWrapper>
-          );
-        })}
+      <Wrapper>
+        <ProcessTitle>Our Process</ProcessTitle>
+        <ProcessTextWrap>
+         <ProcessText>
+          We believe that the most innovative ideas start with entrepreneurs and
+          the right process.
+        </ProcessText>
+        </ProcessTextWrap>
+       
+        <ProcessContainer>
+          {ProcessData.map((data, index) => {
+            return (
+              <ProcessImageWrapper
+                mediumSizeLeft={data.mediumSizeLeft}
+                mediumSizetop={data.mediumSizetop}
+                LSizeLeft={data.LSizeLeft}
+                LSizetop={data.LSizetop}
+                leftCalc={leftCalc}
+                key={index}
+              >
+                <ProcessImage src={data.image} />
+                <ProcessContent>{data.text}</ProcessContent>
+              </ProcessImageWrapper>
+            );
+          })}
 
-        <BgLineImage>
-          <BgImage src={LineBg} />
-        </BgLineImage>
-      </ProcessContainer>
+          <BgLineImage>
+            <BgImage src={LineBg} />
+          </BgLineImage>
+        </ProcessContainer>
+      </Wrapper>
     </ProcessWrapper>
   );
 };
 
-export {ProcessSection};
+export { ProcessSection };

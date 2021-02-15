@@ -10,6 +10,8 @@ export const ProcessData = [
     type: "listen",
     mediumSizeLeft: 0.01,
     mediumSizetop: "4rem",
+    LSizeLeft: 0.01,
+    LSizetop: "4rem",
   },
   {
     image: Design,
@@ -17,6 +19,8 @@ export const ProcessData = [
     type: "design",
     mediumSizeLeft: 0.2,
     mediumSizetop: "10rem",
+    LSizeLeft: 0.25,
+    LSizetop: "12rem",
   },
   {
     image: Develop,
@@ -24,6 +28,8 @@ export const ProcessData = [
     type: "develop",
     mediumSizeLeft: 0.58,
     mediumSizetop: "9rem",
+    LSizeLeft: 0.68,
+    LSizetop: "11rem",
   },
   {
     image: Care,
@@ -31,5 +37,7 @@ export const ProcessData = [
     type: "care",
     mediumSizeLeft: 0.82,
     mediumSizetop: "2rem",
+    LSizeLeft: 0.96,
+    LSizetop: "2rem",
   },
 ];

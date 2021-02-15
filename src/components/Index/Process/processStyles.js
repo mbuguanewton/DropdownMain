@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ProcessWrapper = styled.div`
 width: 100%;
-height: 100vh;
+height: 100%;
 overflow:hidden;
 display:none;
 
@@ -10,7 +10,16 @@ display:none;
     display:block;
 }
 `;
+export const Wrapper = styled.div`
+width:100%;
+height: 100%;
+margin:auto;
+margin-bottom: 412px;
 
+@media all and (min-width:1300px){
+  width: 87%;
+}
+`;
 export const ProcessTitle = styled.div`
   margin-bottom: 23px;
   text-align: center;
@@ -21,11 +30,37 @@ export const ProcessTitle = styled.div`
   margin-top: 20px;
   margin-bottom: 100px;
 
-  @media all and (min-width: 1000px){
-    margin-bottom: 0;
+  @media all and (min-width: 768px) {
+    font-size: 35.47px;
+    line-height: 69px;
+    margin-bottom: 100px;
+  }
+  @media all and (min-width: 1300px) {
+    width: 90%;
+    font-size: 21px;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 23px;
   }
 `;
+export const ProcessTextWrap = styled.div`
+width: 90%;
+margin: auto;
+`;
+export const ProcessText = styled.p`
+display: none;
 
+@media all and (min-width: 1300px){
+  display:block;
+  width: 827px;
+  height: 62px;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 26px;
+  
+  margin-bottom: 50px;
+}
+`
 export const ProcessContainer = styled.div`
 position: relative;
 width: 90%;
@@ -36,8 +71,8 @@ margin: auto;
 `;
 
 export const ProcessImageWrapper = styled.div`
-  width: 100px;
-  height: 100px;
+  width: 119px;
+  height: 119px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,17 +83,26 @@ export const ProcessImageWrapper = styled.div`
   top: ${({ mediumSizetop }) => mediumSizetop};
 
   @media all and (min-width: 1000px) {
-    left: ${({  mediumSizeLeft }) => `${1000 * mediumSizeLeft}px`};
+    left: ${({ mediumSizeLeft }) => `${1000 * mediumSizeLeft}px`};
     top: ${({ mediumSizetop }) => mediumSizetop};
+  }
+  @media all and (min-width: 1300px) {
+    left: ${({ LSizeLeft }) => `${1000 * LSizeLeft}px`};
+    top: ${({ LSizetop }) => LSizetop};
   }
 `;
 
 export const ProcessImage = styled.img`
-  width: 100px;
-  height: 100px;
-  @media all and (min-width:1000px){
-    width: 230px;
-    height: 250px;
+  width: 159px;
+  height: 159px;
+
+  @media all and (min-width: 1000px) {
+    width: 169px;
+    height: 169px;
+  }
+  @media all and (min-width: 1300px) {
+    width: 200px;
+    height: 200px;
   }
 `;
 
@@ -71,15 +115,22 @@ export const ProcessContent = styled.div`
     font-size: 18px;
     width: 80%;
   }
+  @media all and (min-width: 1300px) {
+    width: 100%;
+  }
 `;
 
 export const BgLineImage = styled.div`
   width: 90%;
   margin: auto;
   padding-top: 70px;
+
 `;
 
 export const BgImage = styled.img`
   width: 100%;
-  
+  @media all and (min-width: 1300px){
+    height: 140px;
+    width: 945px;
+  }
 `;
