@@ -19,11 +19,10 @@ const ServiceSolution = ({ SolutionData }) => {
         </ContentText>
         <ContentSolutionWrapper>
           <Swiper
-           
             breakpoints={{
               350: {
                 slidesPerView: 2,
-                spaceBetween: 130
+                spaceBetween: 130,
               },
             }}
           >
