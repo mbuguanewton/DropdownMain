@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { MobileMenu, Navigation, FooterSection } from "../components/common";
-import { ServiceHeroSection } from "../components/ServicesPage";
+import {
+  ServiceHeroSection,
+  ServiceSolution,
+} from "../components/ServicesPage";
 import { FooterServices } from "../data/footerData";
+import { SolutionData } from "../data/ServiceSolution";
 const Services = () => {
   const [openMobileMenu, setMobileMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState();
@@ -26,6 +30,7 @@ const Services = () => {
       <MobileMenu mobileActive={openMobileMenu} toggle={toggle} />
       <Navigation toggle={toggle} mobileActive={openMobileMenu} />
       <ServiceHeroSection ScreenWidth={screenWidth} />
+      <ServiceSolution SolutionData={SolutionData} />
       <FooterSection FServices={FooterServices} />
     </>
   );

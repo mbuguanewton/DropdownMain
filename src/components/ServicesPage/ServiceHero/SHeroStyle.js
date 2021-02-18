@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const SHeroWrapper = styled.section`
   width: 100%;
   height: 100%;
-  
+  overflow:hidden;
   z-index: -6
 `;
 
@@ -123,7 +123,9 @@ export const Frame3 = styled.div`
  
 `;
 
-export const TextContentWrap = styled.div``;
+export const TextContentWrap = styled.div`
+width: 100%;
+`;
 
 export const TextContentHead = styled.div`
   font-weight: 600;
