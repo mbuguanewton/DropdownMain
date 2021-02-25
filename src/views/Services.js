@@ -3,9 +3,14 @@ import { MobileMenu, Navigation, FooterSection } from "../components/common";
 import {
   ServiceHeroSection,
   ServiceSolution,
+  ServiceLists,
 } from "../components/ServicesPage";
 import { FooterServices } from "../data/footerData";
-import { SolutionData } from "../data/ServiceSolution";
+import {
+  SolutionData,
+  TabsData,
+  ServicesDetailData,
+} from "../data/ServiceSolution";
 const Services = () => {
   const [openMobileMenu, setMobileMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState();
@@ -31,6 +36,7 @@ const Services = () => {
       <Navigation toggle={toggle} mobileActive={openMobileMenu} />
       <ServiceHeroSection ScreenWidth={screenWidth} />
       <ServiceSolution SolutionData={SolutionData} />
+      <ServiceLists TabData={TabsData} serviceData={ServicesDetailData}/>
       <FooterSection FServices={FooterServices} />
     </>
   );
