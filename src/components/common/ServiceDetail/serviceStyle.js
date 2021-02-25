@@ -12,7 +12,7 @@ export const ImageWrapper = styled.div`
 export const Image = styled.div`
   background: url(${({ sbg }) => sbg}) no-repeat;
   width: 400px;
-  height: 200px;
+  height:200px;
 `;
 
 export const ContentDetailWrapper = styled.div`
@@ -22,7 +22,7 @@ export const ContentDetailWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #ffffff;
+  background: ${({bgColor})=>(bgColor)};
   box-shadow: 0px 7.06746px 18.4841px rgba(0, 0, 0, 0.129);
   border-radius: 2.71825px;
   margin-bottom: 56px;

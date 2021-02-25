@@ -19,7 +19,7 @@ const ServiceDetail = ({serviceData}) => {
           <Image sbg={serviceData.mainImage} Lbg={serviceData.mainImage} />
         </ImageWrapper>
 
-        <ContentDetailWrapper>
+        <ContentDetailWrapper bgColor={serviceData.color}>
           <ContentWrapper>
             <ContentText>{serviceData.Title}</ContentText>
           </ContentWrapper>
