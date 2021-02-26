@@ -1,14 +1,10 @@
 import React, { useState } from "react";
-import {
-  MobileMenu,
-  Navigation,
-  FooterSection,
-  Lists,
-} from "../components/common";
-import { ServiceHeroSection  } from "../components/ServiceCommerce";
+import { MobileMenu, Navigation, FooterSection } from "../components/common";
+import { ServiceHeroSection, Lists } from "../components/ServiceCommerce";
 import { FooterServices } from "../data/footerData";
-import {EcommerceServices, EcommerceData} from '../data/EcommerceData';
-const Commerce = () => {
+import { EcommerceServices, EcommerceData } from "../data/EcommerceData";
+
+const Branding = () => {
   const [openMobileMenu, setMobileMenu] = useState(false);
 
   const toggle = () => {
@@ -26,4 +22,4 @@ const Commerce = () => {
   );
 };
 
-export default Commerce;
+export default Branding;
