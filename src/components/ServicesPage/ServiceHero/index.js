@@ -28,15 +28,17 @@ const ServiceHeroSection = ({ ScreenWidth }) => {
           </ImageWrapper>
         </ImageContainer>
 
+        
+
         <TextContentWrap>
           <TextContentHead>
-            All-inclusive software &<br/> Web development services
+            All-inclusive software &<br /> Web development services
           </TextContentHead>
           <TextContent>
             From Consulting & Discovery sessions, through Web & PWA development
             to Mobile development.
           </TextContent>
-         <Button Btext={'Get A Estimate'}/>
+          <Button Btext={"Get A Estimate"} />
         </TextContentWrap>
       </SHeroContainer>
     </SHeroWrapper>

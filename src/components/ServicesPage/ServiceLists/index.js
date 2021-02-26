@@ -44,7 +44,7 @@ const ServiceLists = ({ TabData, serviceData }) => {
           );
         })}
 
-<SiteExamples/>
+        <SiteExamples />
       </Container>
     </Wrapper>
   );

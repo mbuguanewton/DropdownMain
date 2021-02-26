@@ -5,3 +5,4 @@ export * from './Button';
 export * from './SubServiceDetail'
 export * from './ServiceDetail';
 export * from './SiteExamples';
+export * from './ServiceTabs';
