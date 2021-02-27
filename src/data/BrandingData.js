@@ -3,64 +3,109 @@ import PWADev from "../assets/Images/Foreground/PWADev.svg";
 import productUx from "../assets/Images/Foreground/productUx.png";
 import productDesign from "../assets/Images/Foreground/productSprint.png";
 
-export const EcommerceServices = [
+export const BrandingServices = [
   {
-    ServiceType: "Custom E-Commerce/POS",
+    ServiceType: "Brand stravtegy",
   },
   {
-    ServiceType: "PWA Webstore Development",
+    ServiceType: "Brand Experience",
+  },
+  {
+    ServiceType: "Brand Launch & Activation",
   },
 ];
 
-export const EcommerceData = [
+export const BrandingData = [
   {
-    Title: "Custom E-Commerce/POS",
+    Title: "Brand Strategy",
     Type: "Half",
     mainImage:
       "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Rectangle_278-min_Qz0EUzZRQ.png",
-    mainText: `We create web stores on the basis of an in-depth understanding of your business objectives and the needs of your users. We will deliver a functional and delightful e-commerce websites that users enjoy.`,
-    subText: `“We offer custom e-commerce development solutions that maximize conversions and decrease churn rate, providing web visibility for your good or service.”`,
-    serviceDetailTitle: "Custom e-commerse development services include",
+    mainText: `Strategy is both functional and inspirational. It lays the foundation for boosting customer loyalty and building brand equity.  Our strategy services help you build a foundation for the future of your brand by defining a positioning platform that drives relevance.`,
+    subText: "",
+    serviceDetailTitle: "Brand strategy services include",
     serviceType: "fill",
     color: "#ffffff",
     serviceDetail: [
       {
         Image: PWADiscovery,
-        text: "Discovery session",
+        text: "Brand Positioning",
       },
       {
         Image: productDesign,
-        text: "Design sprint",
+        text: "Brand Architecture & Naming",
       },
       {
         Image: productUx,
-        text: "UX/UI design",
+        text: "Brand Story",
       },
       {
         Image: PWADev,
-        text: "Development",
+        text: "UX Strategy",
       },
     ],
 
     BottomButton: true,
-    BottomButtonHead: "Ready to Build an e-commerce website?",
+    BottomButtonHead: "Need to rebrand your business?",
     BottomButtonText: "start now",
   },
 
   {
-    Title: "PWA Web Store Development",
-    Type: "Full",
+    Title: "Brand Experience",
+    Type: "Half",
     mainImage:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Mobile/DC221211-5961-456D-A43E-C924ADD6F50C_1_9keu_2lr9.png",
-    mainText: `Google-designed Progressive Web Applications are a series of APIs that enable the development of fast, reliable and engaging digital products with the essential features of both web pages and mobile apps. This involves offline access, push alerts, shortcuts to the home screen and functionality via a standard mobile browser.`,
-    subText: `“PWA will boost the speed of your page in your store. They scale easily and give your users both mobile and offline access to your store,”`,
-    serviceDetailTitle: "",
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Rectangle_278-min_Qz0EUzZRQ.png",
+    mainText: `Strong brands have distinct personalities that are instantly recognizable in every brand experience. Using data-driven strategies, we will build a visual identity that will connect with audiences in meaningful ways, and boost brand awareness and customer loyalty.`,
+    subText: "",
+    serviceDetailTitle: "Brand experience services include",
     serviceType: "fill",
     color: "#ffffff",
-    serviceDetail: [],
+    serviceDetail: [
+      {
+        Image: PWADiscovery,
+        text: "Visual Identity",
+      },
+      {
+        Image: productDesign,
+        text: "Websites & Mobile",
+      },
+      {
+        Image: productUx,
+        text: "Graphic Design",
+      },
+      {
+        Image: PWADev,
+        text: "Marketing Collateral",
+      },
+    ],
+  },
 
-    BottomButton: false,
-    BottomButtonHead: "",
-    BottomButtonText: "",
+  {
+    Title: "Brand Launch",
+    Type: "Half",
+    mainImage:
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Rectangle_278-min_Qz0EUzZRQ.png",
+    mainText: `Our launch services help ensure that your brand remains prepared for growth far beyond its initial launch. They help you stay relevant in a fast-paced and evoulving market.  We also aligning your team around culture and positioning.
+
+`,
+    subText: "",
+    serviceDetailTitle: "Brand launch services include",
+    serviceType: "fill",
+    color: "#ffffff",
+    serviceDetail: [
+      {
+        Image: PWADiscovery,
+        text: "Brand Launch",
+      },
+      {
+        Image: productDesign,
+        text: "Brand Implementation",
+      },
+      {
+        Image: productUx,
+        text: " Campaign Development",
+      },
+     
+    ],
   },
 ];

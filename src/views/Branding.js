@@ -1,8 +1,13 @@
 import React, { useState } from "react";
-import { MobileMenu, Navigation, FooterSection } from "../components/common";
-import { ServiceHeroSection, Lists } from "../components/ServiceCommerce";
+import {
+  MobileMenu,
+  Navigation,
+  FooterSection,
+  Lists,
+} from "../components/common";
+import { BrandingHeroSection } from "../components/Branding";
 import { FooterServices } from "../data/footerData";
-import { EcommerceServices, EcommerceData } from "../data/EcommerceData";
+import { BrandingServices, BrandingData } from "../data/BrandingData";
 
 const Branding = () => {
   const [openMobileMenu, setMobileMenu] = useState(false);
@@ -15,8 +20,8 @@ const Branding = () => {
     <>
       <MobileMenu mobileActive={openMobileMenu} toggle={toggle} />
       <Navigation toggle={toggle} mobileActive={openMobileMenu} />
-      <ServiceHeroSection />
-      <Lists TabsData={EcommerceServices} serviceData={EcommerceData} />
+      <BrandingHeroSection />
+      <Lists TabsData={BrandingServices} serviceData={BrandingData} />
       <FooterSection FServices={FooterServices} />
     </>
   );

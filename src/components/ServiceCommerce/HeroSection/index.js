@@ -1,5 +1,4 @@
 import React from "react";
-import LMHero from "../../../assets/Images/Foreground/LMSHero.svg";
 import { Button } from "../../common";
 import {
   SHeroWrapper,
