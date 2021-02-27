@@ -6,11 +6,15 @@ export const TopWrapper = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Image = styled.div`
   background: url(${({ sbg }) => sbg}) no-repeat;
+  background-size: cover;
+  
   width: 400px;
   height:200px;
 `;

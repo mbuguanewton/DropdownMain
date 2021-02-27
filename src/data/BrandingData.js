@@ -25,7 +25,7 @@ export const BrandingData = [
     subText: "",
     serviceDetailTitle: "Brand strategy services include",
     serviceType: "fill",
-    color: "#ffffff",
+    color: "rgba(255, 222, 178, 0.3)",
     serviceDetail: [
       {
         Image: PWADiscovery,
@@ -54,7 +54,7 @@ export const BrandingData = [
     Title: "Brand Experience",
     Type: "Half",
     mainImage:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Rectangle_278-min_Qz0EUzZRQ.png",
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/SweetCakes_i6dvofvy_.svg",
     mainText: `Strong brands have distinct personalities that are instantly recognizable in every brand experience. Using data-driven strategies, we will build a visual identity that will connect with audiences in meaningful ways, and boost brand awareness and customer loyalty.`,
     subText: "",
     serviceDetailTitle: "Brand experience services include",
@@ -84,14 +84,14 @@ export const BrandingData = [
     Title: "Brand Launch",
     Type: "Half",
     mainImage:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Rectangle_278-min_Qz0EUzZRQ.png",
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Mobile/Rectangle_280_YZNpacVWm.png",
     mainText: `Our launch services help ensure that your brand remains prepared for growth far beyond its initial launch. They help you stay relevant in a fast-paced and evoulving market.  We also aligning your team around culture and positioning.
 
 `,
     subText: "",
     serviceDetailTitle: "Brand launch services include",
     serviceType: "fill",
-    color: "#ffffff",
+    color: "rgba(255, 222, 178, 0.3)",
     serviceDetail: [
       {
         Image: PWADiscovery,
@@ -105,7 +105,6 @@ export const BrandingData = [
         Image: productUx,
         text: " Campaign Development",
       },
-     
     ],
   },
 ];
