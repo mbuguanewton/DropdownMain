@@ -1,7 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 
-import { MobileMenu, Navigation, FooterSection } from "../components/common";
+import {
+  MobileMenu,
+  Navigation,
+  FooterSection,
+  SupportSection,
+} from "../components/common";
 import {
   HeroSection,
   ProcessSection,
@@ -9,7 +14,7 @@ import {
   ServicesSection,
   TechSection,
   TestimonySection,
-  SupportSection,
+  
 } from "../components/Index";
 
 import { WorkData } from "../data/RecentWorkData";
@@ -25,6 +30,7 @@ const Home = () => {
 
   useEffect(() => {
     scrolle = window.screen.width;
+   
     let total = scrolle;
     setScrollWidth(total);
   }, []);

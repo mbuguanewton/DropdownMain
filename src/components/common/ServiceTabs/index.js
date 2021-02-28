@@ -8,10 +8,12 @@ import {
 const ServiceTab = ({TabData}) => {
     return (
       <Container>
+      
         <ServiceTitle>Our Services</ServiceTitle>
         <TabsContainer>
           {TabData.map((data, index) => {
             return (
+              
               <TabsContent
                 key={index}
                 to={data.ServiceType}
@@ -22,6 +24,8 @@ const ServiceTab = ({TabData}) => {
               >
                 {data.ServiceType}
               </TabsContent>
+             
+             
             );
           })}
         </TabsContainer>

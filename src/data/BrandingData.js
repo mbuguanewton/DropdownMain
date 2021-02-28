@@ -3,6 +3,13 @@ import PWADev from "../assets/Images/Foreground/PWADev.svg";
 import productUx from "../assets/Images/Foreground/productUx.png";
 import productDesign from "../assets/Images/Foreground/productSprint.png";
 
+import BrandPosition from '../assets/Images/Foreground/BrandPosition.svg';
+import BrandArch from '../assets/Images/Foreground/brandArch.svg';
+import BrandStory from '../assets/Images/Foreground/brandArch.svg';
+import BrandUx from '../assets/Images/Foreground/UXStrategy.svg';
+
+import GraphicDesign from '../assets/Images/Foreground/GraphicDesign.svg';
+
 export const BrandingServices = [
   {
     ServiceType: "Brand stravtegy",
@@ -28,19 +35,19 @@ export const BrandingData = [
     color: "rgba(255, 222, 178, 0.3)",
     serviceDetail: [
       {
-        Image: PWADiscovery,
+        Image: BrandPosition,
         text: "Brand Positioning",
       },
       {
-        Image: productDesign,
+        Image: BrandArch,
         text: "Brand Architecture & Naming",
       },
       {
-        Image: productUx,
+        Image: BrandStory,
         text: "Brand Story",
       },
       {
-        Image: PWADev,
+        Image: BrandUx,
         text: "UX Strategy",
       },
     ],
@@ -62,15 +69,15 @@ export const BrandingData = [
     color: "#ffffff",
     serviceDetail: [
       {
-        Image: PWADiscovery,
+        Image: productDesign,
         text: "Visual Identity",
       },
       {
-        Image: productDesign,
+        Image: productUx,
         text: "Websites & Mobile",
       },
       {
-        Image: productUx,
+        Image: GraphicDesign,
         text: "Graphic Design",
       },
       {

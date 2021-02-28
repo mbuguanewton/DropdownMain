@@ -8,7 +8,7 @@ import {
   ServiceButton,
 } from "../../common";
 const Lists = ({ TabsData, serviceData }) => {
-    console.log("results", TabsData, serviceData, );
+    
   return (
     <Wrapper>
       <Container>

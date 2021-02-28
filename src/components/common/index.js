@@ -7,4 +7,6 @@ export * from './ServiceDetail';
 export * from './SiteExamples';
 export * from './ServiceTabs';
 export * from './ServiceButton';
-export * from './ServiceLists'
+export * from './ServiceLists';
+export * from './HeroWorkSection';
+export * from './support';
