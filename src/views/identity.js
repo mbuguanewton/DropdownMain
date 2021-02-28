@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import VisualIdentitySection from '../components/VisualIdentity';
 import {
   MobileMenu,
   Navigation,
@@ -6,8 +7,8 @@ import {
   HeroWork,
   SupportSection,
 } from "../components/common";
-import WorkSection from "../components/ProjectWork/WorkSection";
-import {WorkTitle} from '../data/identityData';
+
+import {WorkTitle, IdentityWork} from '../data/identityData';
 import { FooterServices } from "../data/footerData";
 const VisualIdentity = () => {
   const [openMobileMenu, setMobileMenu] = useState(false);
@@ -19,6 +20,7 @@ const VisualIdentity = () => {
       <MobileMenu mobileActive={openMobileMenu} toggle={toggle} />
       <Navigation toggle={toggle} mobileActive={openMobileMenu} />
       <HeroWork details={WorkTitle} />
+      <VisualIdentitySection Identity={IdentityWork}/>
       <SupportSection />
       <FooterSection FServices={FooterServices} />
     </>

@@ -1,3 +1,30 @@
+import CodeBox from '../assets/Images/LogoIcons/CodeBox.svg';
+import CodeBoxColor from "../assets/Images/LogoIcons/codeboxColor.svg";
+
+import Udia from '../assets/Images/LogoIcons/Udia.svg';
+import UdiaColor from '../assets/Images/LogoIcons/UdiaColor.svg';
+
+import Learnhub from '../assets/Images/LogoIcons/LearnHub.svg';
+import LearnhubColor from '../assets/Images/LogoIcons/learnhubColor.svg';
+
+import Jackies from '../assets/Images/LogoIcons/JackieFarm.svg';
+import JackiesColor from '../assets/Images/LogoIcons/jackiesColor.svg';
+
+import MeltingPot from '../assets/Images/LogoIcons/MeltingVenture.svg';
+import MeltingPotColor from '../assets/Images/LogoIcons/meltingColor.svg';
+
+import Uzaleo from '../assets/Images/LogoIcons/Uzaleo.svg';
+import UzaleoColor from '../assets/Images/LogoIcons/UzaleoColor.svg';
+
+import LociFoods from '../assets/Images/LogoIcons/LociFoods.svg';
+import LociFoodsColor from '../assets/Images/LogoIcons/LociFoodsColor.svg';
+
+import Sukuma from '../assets/Images/LogoIcons/sukuma.svg';
+import SukumaColor from '../assets/Images/LogoIcons/sukumaColor.svg';
+
+import Brickcom from '../assets/Images/LogoIcons/Brickcom.svg';
+import BrickcomColor from '../assets/Images/LogoIcons/brickomColor.svg';
+
 export const WorkTitle = {
   title: "Visual identity is how you shape perception.",
   text:
@@ -5,43 +32,60 @@ export const WorkTitle = {
   BtnText: "GET A ESTIMATE",
 };
 
-export const ClientWork = [
+export const IdentityWork = [
   {
-    link:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Inspire/Frame_60-min_Jsb4hDjH0.png",
-    alt: "security",
+    link: CodeBox,
+    colorlink: CodeBoxColor,
+    alt: "CodeBox",
+    CompanyName: "CodeBox",
   },
   {
-    link:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Inspire/Frame_63-min_BOaMnCmkLn.png",
+    link: Udia,
+    colorlink: UdiaColor,
+    alt: "Udia",
+    CompanyName: "Udia",
+  },
+  {
+    link: Learnhub,
+    alt: "Learnhub",
+    colorlink: LearnhubColor,
+    CompanyName: "Learnhub",
+  },
+  {
+    link: Jackies,
+    alt: "Jackie's Farm",
+    colorlink: JackiesColor,
+    CompanyName: "Jackie's farm",
+  },
+  {
+    link: MeltingPot,
+    alt: "MeltingPot",
+    colorlink: MeltingPotColor,
+    CompanyName: "MeltingPot",
+  },
+  {
+    link: Uzaleo,
+    alt: "Uzaleo",
+    colorlink: UzaleoColor,
+    CompanyName: "Uzaleo",
+  },
+  {
+    link: LociFoods,
     alt: "LociFoods",
+    colorlink: LociFoodsColor,
+    CompanyName: "LociFoods",
   },
   {
-    link:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Inspire/Frame_68-min_mnqGxRlVEU.png",
-    alt: "PaintDepo",
+    link: Sukuma,
+    alt: "Sukuma",
+    colorlink: SukumaColor,
+    CompanyName: "Sukuma",
   },
   {
-    link:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Inspire/Frame_69-min_j6RlHQtVD.png",
-    alt: "LMS",
+    link: Brickcom,
+    alt: "Brickcom",
+    colorlink: BrickcomColor,
+    CompanyName: "Brickcom",
   },
 ];
 
-export const OurProjects = [
-  {
-    link:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Inspire/Frame_71-min_FqWwDY-g-F.png",
-    alt: "innovation",
-  },
-  {
-    link:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Inspire/Frame_65-min_rxJ7Cr5Fm7.png",
-    alt: "Stephanie",
-  },
-  {
-    link:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Inspire/Frame_64-min_UCefR3-WtV.png",
-    alt: "Sifawear",
-  },
-];

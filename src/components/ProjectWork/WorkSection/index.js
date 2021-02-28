@@ -9,7 +9,7 @@ import {
   TabsContent,
   ClientContentWrapper,
   ClientContent,
-  Image,
+
 } from "./workstyles";
 const WorkSection = ({ ClientWork, OurProjects }) => {
   const [clientActive, setClientActive] = useState(true);
