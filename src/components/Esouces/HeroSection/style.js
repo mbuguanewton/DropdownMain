@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 
 export const SHeroWrapper = styled.section`
@@ -34,5 +33,3 @@ export const TextContent = styled.p`
   font-weight: 400;
   margin-bottom: 23px;
 `;
-
-

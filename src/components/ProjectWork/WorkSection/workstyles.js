@@ -9,7 +9,7 @@ export const TabsWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 80%;
-  margin:auto;
+  margin: auto;
 `;
 
 export const TabsContent = styled.div`
@@ -22,8 +22,8 @@ export const TabsContent = styled.div`
     active ? "2px solid green" : "2px solid white"};
   font-weight: 500;
   font-size: 17px;
-  line-height:23px;
-  font-weight:700;
+  line-height: 23px;
+  font-weight: 700;
   line-height: 30px;
   text-align: center;
   &:hover {
@@ -34,7 +34,7 @@ export const ClientContentWrapper = styled.div`
   width: 100%;
   height: 100%;
   margin-top: 20px;
-  
+
   display: ${({ activeState }) => (activeState ? "block" : "none")};
   @media all and (max-width: 280px) {
     margin-top: 40px;
