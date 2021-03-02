@@ -16,18 +16,25 @@ export const TabsWrapper = styled.div`
 
 export const TabsContent = styled.div`
   width: 175px;
-  height: 23px;
+  height: 33px;
   background-color: white;
   cursor: pointer;
   outline: none;
   border-bottom: ${({ active }) =>
     active ? "2px solid green" : "2px solid white"};
-  font-weight: 500;
   font-size: 15px;
   line-height: 23px;
-  font-weight: 700;
+  font-weight: ${({ active }) => (active ? "700" : "500")};
   line-height: 30px;
   text-align: center;
+  padding-bottom: 10px;
+  color: ${({ active }) => (active ? "black" : "#ABABAB")};
+  @media all and (max-width: 351px) {
+    font-size: 13px;
+  }
+  @media all and (max-width: 302px) {
+    font-size: 11px !important;
+  }
   &:hover {
   }
 `;
@@ -35,7 +42,7 @@ export const TabsContent = styled.div`
 export const ClientContentWrapper = styled.div`
   width: 100%;
   height: 100%;
-  margin-top: 20px;
+  margin-top: 70px;
 margin-bottom:50px;
   display: ${({ activeState }) => (activeState ? "block" : "none")};
   @media all and (max-width: 280px) {
@@ -56,6 +63,8 @@ export const ClientContent = styled.div`
     margin-bottom: 0px;
     padding-bottom: 0px;
     object-fit: contain;
+    filter: drop-shadow(16.694px 16.694px 43.7224px rgba(0, 0, 0, 0.209));
+
     @media all and (max-width: 280px) {
       width: 240px;
       height: 172px;
@@ -68,15 +77,22 @@ export const SubTitle = styled.p`
   font-size: 15px;
   line-height: 20.57px;
   color: #151515;
+  text-align:left;
+  width: 266.81px;
+  margin:auto;
+  margin-top:30px;
 `;
 
 export const Title = styled.h4`
   font-weight: bold;
-  font-size: 23.0536px;
-  line-height: 31px;
+  font-size: 25.0536px;
+  line-height: 37px;
   letter-spacing: -0.01em;
   color: #264d2d;
-  margin-bottom:8px;
+  width: 266.81px;
+  margin: auto;
+  margin-bottom: 8px;
+  text-align: left;
 `;
 
 export const ContentButtonWrap = styled.div`
@@ -109,8 +125,11 @@ export const OpenContent = styled.div`
 `;
 
 export const ContentWrap = styled.div`
-margin-top:10px;
-margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @media all and (min-width: 402px) {
+    padding: 0 20px;
+  }
 `;
 
 export const ContentText = styled.h4`
@@ -120,16 +139,23 @@ export const ContentText = styled.h4`
   font-size: 21px;
   line-height: 28px;
   color: #151515;
-  display:flex;
-  margin:auto;
- 
+  display: flex;
+  margin: auto;
+
+  @media all and (max-width: 351px) {
+    font-size: 17px;
+  }
+  @media all and (max-width: 281px) {
+    font-size: 14px !important;
+  }
 `;
 
 export const ContentSubText = styled.p`
   font-weight: 500px;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 14px;
   width: 92%;
+  color:#6C6C6C;
   margin:auto;
 `;
 
@@ -139,6 +165,7 @@ export const ButtonContent = styled.div`
   align-items: center;
   width:92%;
   margin:auto;
+  margin-top: 20px;
 `;
 
 export const BtnText = styled.div`
