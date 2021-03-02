@@ -7,6 +7,7 @@ import Branding from "./views/Branding";
 import  Work  from "./views/Work";
 import VisualIdentity from "./views/identity";
 import Esources from "./views/Esources";
+import Contact from "./views/Contact";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/work" component={Work} exact />
           <Route path="/visual" component={VisualIdentity} exact />
           <Route path="/esources" component={Esources} exact />
+          <Route path="/contact" component={Contact} exact />
         </Switch>
       </Router>
     </>
