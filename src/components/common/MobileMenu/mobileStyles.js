@@ -1,16 +1,16 @@
 import styled from "styled-components";
 export const MobileMenuContainer = styled.aside`
   height: 100%;
-  width:100%;
-  position:fixed;
-  align-items:center;
+  width: 100%;
+  position: fixed;
+  align-items: center;
   transition: all 0.2s ease-in-out;
   opacity: ${({ mobileActive }) => (mobileActive ? "100%" : "0")};
-  top:${({ mobileActive }) => (mobileActive ? "0" : "-100%")}; 
-  background: rgba(200, 180, 46, 1);
-  z-index:5;
-  overflow:hidden;
-   @media all and (min-width: 1000px) {
+  top: ${({ mobileActive }) => (mobileActive ? "0" : "-100%")};
+  background: linear-gradient(180deg, #fde1a9 0%, #fdebc7 32.81%, #ffffff 100%);
+  z-index: 5;
+  overflow: hidden;
+  @media all and (min-width: 1000px) {
     display: none;
   }
 `;

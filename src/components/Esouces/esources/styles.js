@@ -55,7 +55,7 @@ export const ClientContent = styled.div`
     height: 380px;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    object-fit: cover;
+    object-fit: contain;
     @media all and (max-width: 280px) {
       width: 240px;
       height: 172px;

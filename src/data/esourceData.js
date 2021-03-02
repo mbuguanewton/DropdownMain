@@ -1,27 +1,27 @@
 
-export const pressData = [
-  {
-    pressCover:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/resources/A4_-_1_7-9UOpAMDB.png",
-    subtitle: "Press & Corporate",
-    title: "Custom Website 2020-2021",
-    buttontext: "DOWNLOAD",
-  },
-  {
-    pressCover:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/resources/image_008iF7Nt-.png",
-    subtitle: "Press & Corporate",
-    title: "Brand Development 2021",
-    buttontext: "DOWNLOAD",
-  },
-  {
-    pressCover:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/resources/A4_-_5_46YIURtVL.png",
-    subtitle: "Press & Corporate",
-    title: "Company Profile",
-    buttontext: "DOWNLOAD",
-  },
-];
+ export const pressData = [
+   {
+     pressCover:
+       "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/resources/A4_-_1-1_Pb2WaV1uj2.png",
+     subtitle: "Press & Corporate",
+     title: "Custom Website 2020-2021",
+     buttontext: "DOWNLOAD",
+   },
+   {
+     pressCover:
+       "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/resources/A4_-_1_2yjq2QEUMD.png",
+     subtitle: "Press & Corporate",
+     title: "Brand Development 2021",
+     buttontext: "DOWNLOAD",
+   },
+   {
+     pressCover:
+       "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/resources/A4_-_5_R86D3zzGQv.png",
+     subtitle: "Press & Corporate",
+     title: "Company Profile",
+     buttontext: "DOWNLOAD",
+   },
+ ];
 
 export const OpenSourceData = [
   {
