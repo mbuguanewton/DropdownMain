@@ -15,4 +15,7 @@ export const ButtonText = styled(Link)`
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-`;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  `;

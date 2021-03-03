@@ -4,20 +4,21 @@ import { Button } from "../../common";
 import {
   SHeroWrapper,
   SHeroContainer,
-  
+  Frame2,
+  Frame3,
   TextContentWrap,
   TextContentHead,
   TextContent,
 } from "./styles";
-const BrandingHeroSection = () => {
+const BrandingHeroSection = ({widthCheck}) => {
   return (
     <SHeroWrapper>
       <SHeroContainer>
-        
-
         <TextContentWrap>
+          <Frame2 widthset={widthCheck} />
+          <Frame3 widthset={widthCheck} />
           <TextContentHead>
-            Brands are business tools that drive value....
+            Brands are business tools that drive value.
           </TextContentHead>
           <TextContent>
             We design personal or professional brands. Our data-driven approach

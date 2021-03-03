@@ -5,12 +5,12 @@ import {
   TabsContainer,
   TabsContent,
 } from "./tabstyles";
-const ServiceTab = ({TabData}) => {
+const ServiceTab = ({TabData, listStyle}) => {
     return (
       <Container>
       
         <ServiceTitle>Our Services</ServiceTitle>
-        <TabsContainer>
+        <TabsContainer listStyle={listStyle}>
           {TabData.map((data, index) => {
             return (
               

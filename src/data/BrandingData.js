@@ -5,14 +5,14 @@ import productDesign from "../assets/Images/Foreground/productSprint.png";
 
 import BrandPosition from '../assets/Images/Foreground/BrandPosition.svg';
 import BrandArch from '../assets/Images/Foreground/brandArch.svg';
-import BrandStory from '../assets/Images/Foreground/brandArch.svg';
+import BrandStory from '../assets/Images/Foreground/BrandStory.svg';
 import BrandUx from '../assets/Images/Foreground/UXStrategy.svg';
 
 import GraphicDesign from '../assets/Images/Foreground/GraphicDesign.svg';
 
 export const BrandingServices = [
   {
-    ServiceType: "Brand stravtegy",
+    ServiceType: "Brand strategy",
   },
   {
     ServiceType: "Brand Experience",
@@ -27,11 +27,13 @@ export const BrandingData = [
     Title: "Brand Strategy",
     Type: "Half",
     mainImage:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Rectangle_278-min_Qz0EUzZRQ.png",
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/laptop-min_n0Xx1LmU1.svg",
     mainText: `Strategy is both functional and inspirational. It lays the foundation for boosting customer loyalty and building brand equity.  Our strategy services help you build a foundation for the future of your brand by defining a positioning platform that drives relevance.`,
     subText: "",
+    changeSize: true,
     serviceDetailTitle: "Brand strategy services include",
     serviceType: "fill",
+
     color: "rgba(255, 222, 178, 0.3)",
     serviceDetail: [
       {
@@ -64,17 +66,23 @@ export const BrandingData = [
       "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/SweetCakes_i6dvofvy_.svg",
     mainText: `Strong brands have distinct personalities that are instantly recognizable in every brand experience. Using data-driven strategies, we will build a visual identity that will connect with audiences in meaningful ways, and boost brand awareness and customer loyalty.`,
     subText: "",
+    changeSize: true,
     serviceDetailTitle: "Brand experience services include",
     serviceType: "fill",
+    dropShadow: true,
     color: "#ffffff",
     serviceDetail: [
       {
         Image: productDesign,
         text: "Visual Identity",
+        detailBtn: true,
+        BtnLink: "/visual",
       },
       {
         Image: productUx,
         text: "Websites & Mobile",
+        detailBtn: true,
+        BtnLink: "/services",
       },
       {
         Image: GraphicDesign,
@@ -88,7 +96,7 @@ export const BrandingData = [
   },
 
   {
-    Title: "Brand Launch",
+    Title: "Brand Launch & Activation",
     Type: "Half",
     mainImage:
       "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Mobile/Rectangle_280_YZNpacVWm.png",

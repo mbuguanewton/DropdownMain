@@ -7,17 +7,17 @@ import {
   SiteExamples,
   ServiceButton,
 } from "../../common";
-const Lists = ({ TabsData, serviceData }) => {
+const Lists = ({ TabsData, serviceData, listStyle }) => {
     
   return (
     <Wrapper>
       <Container>
-        <ServiceTab TabData={TabsData} />
+        <ServiceTab listStyle={listStyle} TabData={TabsData} />
 
         {serviceData.map((data, index) => {
           return (
-            <ServiceContainer>
-              <ServiceDetail serviceData={data} />
+            <ServiceContainer id={data.Title}>
+              <ServiceDetail checkId={index} serviceData={data} />
 
               <SubServiceDetail
                 type={data.serviceType}

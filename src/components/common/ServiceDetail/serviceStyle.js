@@ -9,6 +9,35 @@ export const ImageWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  .image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  #img1 {
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+  }
+  #img0 {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+
+    @media all and (max-width: 472px) {
+      object-fit: contain;
+    }
+    @media all and (max-width: 436px) {
+      object-fit: contain;
+      width: 350px;
+    }
+  }
+
+  @media (min-width:768px) and (max-width: 1365px){
+    width: 750px;
+    margin:auto;
+  }
 `;
 
 export const Image = styled.div`
@@ -27,7 +56,7 @@ export const ContentDetailWrapper = styled.div`
   justify-content: center;
   align-items: center;
   background: ${({bgColor})=>(bgColor)};
-  box-shadow: 0px 7.06746px 18.4841px rgba(0, 0, 0, 0.129);
+ box-shadow: ${({boxShadow})=>(boxShadow ? (' 7.89586px 7.89586px 20.6507px rgba(0, 0, 0, 0.129)'): ('none'))};
   border-radius: 2.71825px;
   margin-bottom: 56px;
 `;
@@ -35,14 +64,14 @@ export const ContentWrapper = styled.div`
   font-weight: 300;
   font-size: 35px;
   line-height: 49px;
-  width: 80%;
+  width: 88%;
   margin-bottom: 23px;
 `;
 
 export const ContentText = styled.p``;
 
 export const ContentMainTextWrapper = styled.div`
-  width: 80%;
+  width: 88%;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
@@ -52,7 +81,7 @@ export const ContentMainTextWrapper = styled.div`
 
 export const ContentMainText = styled.p`
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
   font-family: Noto Sans;
 `;
 

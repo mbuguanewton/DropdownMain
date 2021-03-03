@@ -14,12 +14,27 @@ export const ServiceTitle = styled.h5`
   display: flex;
   justify-content: center;
   color: #264d2d;
+  @media (min-width: 768px) and (max-width: 1356px) {
+   justify-content:left;
+    text-align: left;
+    width: 750px;
+    margin:auto;
+  }
 `;
 export const TabsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 40px;
+  @media (min-width: 768px) and (max-width: 1356px) {
+    display: grid;
+    grid-template-columns: ${({ listStyle }) =>
+      listStyle === "2" ? "0.6fr 1fr" : "1fr 1fr 1fr"};
+      grid-gap: 0;
+    text-align: left;
+    width: 750px;
+    margin: auto;
+  }
 `;
 
 export const TabsContent = styled(ScrollLink)`
@@ -29,6 +44,10 @@ export const TabsContent = styled(ScrollLink)`
   font-size: 25px;
   text-decoration: none;
   cursor: pointer;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 12px;
   &:active {
     font-weight: 700;
     color: #3a7a44;
@@ -36,5 +55,13 @@ export const TabsContent = styled(ScrollLink)`
   &:hover {
     font-weight: 700;
     color: #3a7a44;
+  }
+
+  @media (min-width: 768px) and (max-width: 1356px) {
+    text-align: left;
+    width: 350px;
+    display: block;
+    margin: 0;
+    font-size: 25px;
   }
 `;
