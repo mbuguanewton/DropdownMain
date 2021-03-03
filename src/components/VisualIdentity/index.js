@@ -9,6 +9,10 @@ import {
   ContentWrapper,
   Content,
   ContentDetailWrapper,
+  ContentHead,
+  ContentTextWrap,
+  ContentText,
+  ContentSubText,
 } from "./style";
 const VisualIdentitySection = ({ Identity }) => {
   const [colorlink, setColorLink] = useState({});
@@ -28,6 +32,9 @@ let colorChange = {id: value, active:true};
   return (
     <Wrapper>
       <Container>
+        <ContentHead>
+          Click or hover on the logo to reveal the color
+        </ContentHead>
         <ContentWrapper>
           {Identity.map((data, index) => {
             return (
@@ -58,6 +65,10 @@ let colorChange = {id: value, active:true};
                     />
                   )}
                 </Content>
+                <ContentTextWrap>
+                  <ContentText>{data.CompanyName}</ContentText>
+                  <ContentSubText>Branding - Logo</ContentSubText>
+                </ContentTextWrap>
               </ContentDetailWrapper>
             );
           })}

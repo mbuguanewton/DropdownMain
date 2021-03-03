@@ -7,8 +7,16 @@ height:100%;
 export const Container = styled.div`
 width:100%;
 height:100%;
+margin-bottom: 80px;
 `;
 
+export const ContentHead = styled.p`
+  width: 70%;
+  text-align:center;
+  margin: auto;
+  color: #ff4a22;
+  font-style: italic;
+`;
 export const ContentWrapper = styled.div`
   width: 100%;
   height: 100%;
@@ -47,5 +55,22 @@ export const Content = styled.div`
       height: 172px;
     }
   }
+`;
+
+export const ContentTextWrap = styled.div`
+text-align:center;
+`;
+
+export const ContentText = styled.h5`
+font-weight:500;
+line-height:41px;
+font-size:30px;
+
+`;
+
+export const ContentSubText = styled.p`
+  color: #9c9fa1;
+  font-size: 18px;
+  line-height: 29px;
 `;
 

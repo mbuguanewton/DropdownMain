@@ -1,5 +1,5 @@
-import CodeBox from '../assets/Images/LogoIcons/CodeBox.svg';
-import CodeBoxColor from "../assets/Images/LogoIcons/codeboxColor.svg";
+import AleroLMS from '../assets/Images/LogoIcons/aleroLmsIcov.svg';
+import AleroLMSColor from "../assets/Images/LogoIcons/AleroLMSColor.svg";
 
 import Udia from '../assets/Images/LogoIcons/Udia.svg';
 import UdiaColor from '../assets/Images/LogoIcons/UdiaColor.svg';
@@ -34,10 +34,10 @@ export const WorkTitle = {
 
 export const IdentityWork = [
   {
-    link: CodeBox,
-    colorlink: CodeBoxColor,
-    alt: "CodeBox",
-    CompanyName: "CodeBox",
+    link: AleroLMS,
+    colorlink: AleroLMSColor,
+    alt: "aleroLms",
+    CompanyName: "Alero LMS",
   },
   {
     link: Udia,
