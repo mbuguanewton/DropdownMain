@@ -129,19 +129,29 @@ width: 100%;
 
 export const TextContentHead = styled.div`
   font-weight: 600;
-  font-size: 22px;
+  font-size: 30px;
   text-align: center;
   color: #264d2d;
   margin-bottom: 20px;
+
+  @media all and (min-width:768px){
+    font-size:40px;
+  }
 `;
 
 export const TextContent = styled.p`
-  line-height: 20px;
+  line-height: 34px;
   text-align: center;
-  font-size: 15px;
+  font-size: 25px;
+  width: 80%;
+  margin: auto;
   color: #151515;
-  font-weight:400;
+  font-weight: 400;
   margin-bottom: 23px;
+
+  @media (min-width: 768px) and (max-width: 1366px) {
+    width: 591.2px;
+  }
 `;
 
 export const ContentButtonWrap = styled.div`

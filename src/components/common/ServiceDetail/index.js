@@ -33,7 +33,7 @@ const ServiceDetail = ({serviceData, checkId}) => {
               placeholderSrc={placeholder}
               className={`image ${serviceData.ImageClass}`}
               src={serviceData.mainImage}
-              Lbg={serviceData.mainImage}
+             
             />
           )}
 

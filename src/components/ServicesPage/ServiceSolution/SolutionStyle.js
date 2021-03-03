@@ -13,23 +13,32 @@ height:100%;
 `;
 
 export const ContentText = styled.p`
-font-size: 19.61px;
-line-height: 19.78px;
-font-weight:500;
-display:flex;
-justify-content:center;
-align-items:center;
-width: 95%;
-margin:auto;
-margin-bottom:15px;
+  font-size: 19.61px;
+  line-height: 25px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 93%;
+  margin: auto;
+  margin-bottom: 15px;
 
-@media all and (min-width: 365px){
+  @media all and (min-width: 365px) {
     width: 356px;
-}
+  }
+  @media (min-width: 768px) and (max-width: 1365px) {
+    width: 465px;
+    text-align:center;
+  }
 `;
 
 export const ContentSolutionWrapper = styled.div`
  width: 100%;
+
+ @media (min-width: 768px) and (max-width: 1365px){
+   width: 700px;
+   margin:auto
+ }
 `;
 
 export const ContentSolution = styled.div`

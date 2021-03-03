@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { MobileMenu, Navigation, FooterSection } from "../components/common";
+import {
+  MobileMenu,
+  Navigation,
+  FooterSection,
+  Lists,
+} from "../components/common";
 import {
   ServiceHeroSection,
   ServiceSolution,
-  ServiceLists,
+  
 } from "../components/ServicesPage";
 import { FooterServices } from "../data/footerData";
 import {
@@ -36,7 +41,11 @@ const Services = () => {
       <Navigation toggle={toggle} mobileActive={openMobileMenu} />
       <ServiceHeroSection ScreenWidth={screenWidth} />
       <ServiceSolution SolutionData={SolutionData} />
-      <ServiceLists TabData={TabsData} serviceData={ServicesDetailData}/>
+      <Lists
+        TabStyle="services"
+        TabsData={TabsData}
+        serviceData={ServicesDetailData}
+      />
       <FooterSection FServices={FooterServices} />
     </>
   );

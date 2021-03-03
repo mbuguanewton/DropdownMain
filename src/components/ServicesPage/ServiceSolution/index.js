@@ -9,7 +9,8 @@ import {
   SolutionText,
 } from "./SolutionStyle";
 
-const ServiceSolution = ({ SolutionData }) => {
+const ServiceSolution = ({ SolutionData, }) => {
+  
   return (
     <SolutionWrapper>
       <SolutionContainer>
@@ -20,9 +21,25 @@ const ServiceSolution = ({ SolutionData }) => {
         <ContentSolutionWrapper>
           <Swiper
             breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
               350: {
                 slidesPerView: 2,
-                spaceBetween: 130,
+                spaceBetween: 120,
+              },
+              444: {
+                slidesPerView: 2,
+                spaceBetween: 110,
+              },
+              569: {
+                slidesPerView: 3,
+                spaceBetween: 150,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 60,
               },
             }}
           >
@@ -30,6 +47,7 @@ const ServiceSolution = ({ SolutionData }) => {
               return (
                 <SwiperSlide>
                   <ContentSolution key={index} bg={data.backg}>
+                  
                     <SolutionText>{data.name}</SolutionText>
                   </ContentSolution>
                 </SwiperSlide>

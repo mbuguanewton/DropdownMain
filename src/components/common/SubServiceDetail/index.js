@@ -12,7 +12,7 @@ import {
   ServiceDetailWrap,
 } from "./subStyles";
 const SubServiceDetail = ({ serviceDetails, title, type }) => {
-  console.log(serviceDetails);
+  
   return (
     <DownWrapper>
       <TitleWrapper>{title}</TitleWrapper>

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import { Link as ScrollLink } from "react-scroll";
 export const Container = styled.div`
   width: 100%;
@@ -15,10 +15,10 @@ export const ServiceTitle = styled.h5`
   justify-content: center;
   color: #264d2d;
   @media (min-width: 768px) and (max-width: 1356px) {
-   justify-content:left;
+    justify-content: left;
     text-align: left;
     width: 750px;
-    margin:auto;
+    margin: auto;
   }
 `;
 export const TabsContainer = styled.div`
@@ -30,7 +30,7 @@ export const TabsContainer = styled.div`
     display: grid;
     grid-template-columns: ${({ listStyle }) =>
       listStyle === "2" ? "0.6fr 1fr" : "1fr 1fr 1fr"};
-      grid-gap: 0;
+    grid-gap: 0;
     text-align: left;
     width: 750px;
     margin: auto;
@@ -59,7 +59,8 @@ export const TabsContent = styled(ScrollLink)`
 
   @media (min-width: 768px) and (max-width: 1356px) {
     text-align: left;
-    width: 350px;
+
+    width: ${({ TabStyle }) => (TabStyle === "services" ? "255px" : "350px")};
     display: block;
     margin: 0;
     font-size: 25px;

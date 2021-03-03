@@ -5,7 +5,7 @@ import {
   TabsContainer,
   TabsContent,
 } from "./tabstyles";
-const ServiceTab = ({TabData, listStyle}) => {
+const ServiceTab = ({TabStyle, TabData, listStyle}) => {
     return (
       <Container>
       
@@ -13,8 +13,8 @@ const ServiceTab = ({TabData, listStyle}) => {
         <TabsContainer listStyle={listStyle}>
           {TabData.map((data, index) => {
             return (
-              
               <TabsContent
+                TabStyle={TabStyle}
                 key={index}
                 to={data.ServiceType}
                 smooth={true}
@@ -24,8 +24,6 @@ const ServiceTab = ({TabData, listStyle}) => {
               >
                 {data.ServiceType}
               </TabsContent>
-             
-             
             );
           })}
         </TabsContainer>

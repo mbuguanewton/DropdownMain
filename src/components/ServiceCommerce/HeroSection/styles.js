@@ -118,7 +118,7 @@ export const TextContentHead = styled.div`
 `;
 
 export const TextContent = styled.p`
-  line-height: 20px;
+ 
   text-align: center;
   font-size: 30px;
   line-height: 41px;

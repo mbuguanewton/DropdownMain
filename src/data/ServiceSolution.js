@@ -67,19 +67,18 @@ export const TabsData = [
   {
     ServiceType: "Mobile Development",
   },
-  {
-    ServiceType: "Support",
-  },
+  
 ];
 
 export const ServicesDetailData = [
   {
     Title: "Consulting",
     Type: "Full",
+    dropShadow: true,
     mainImage:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Mobile/image_6WKDsijsDq.png",
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/image-min_UxVGio_bIJ.png",
     mainText: `We provide you with expert opinion on different aspects of the software development process, Web development, Mobile development and much more.`,
-    subText: `“We are here to help you <h5>start & grow</h5>.”`,
+    subText: `“We are here to help you start & grow.”`,
     serviceDetailTitle: "Consulting services include",
     serviceType: "fill",
     color: "#ffffff",
@@ -103,7 +102,7 @@ export const ServicesDetailData = [
     Title: "Product Design",
     Type: "Half",
     mainImage:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Mobile/Rectangle_278_u8NGf4PkL.png",
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Rectangle_281_Lz960jH2W.png",
     mainText:
       "We start from understanding your business’ and users’ needs, then we draw up a strategic plan for prototyping and development. When the product is tested, we show it to the world and wait for the feedback. ",
     subText: `“Digital product creation is a process, we implement double diamond methodology: discover, define, develop, deliver.”`,
@@ -132,8 +131,9 @@ export const ServicesDetailData = [
   {
     Title: "Web Development",
     Type: "Full",
+    dropShadow: true,
     mainImage:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Mobile/Rectangle_277_EOxYWd1a6U.png",
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Rectangle_277-min_E_ZouFfSNF.png",
     mainText:
       "We have developed dozens of web applications, such as an online platform for the learning, a multivendor ERP platform and many more.",
     subText: `“Custom web development
@@ -174,7 +174,7 @@ specialties”`,
     Title: "PWA Development",
     Type: "Half",
     mainImage:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Mobile/Rectangle_280_dVCc8jifzq.png",
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Rectangle_281-1_74oHA5v1T.png",
     mainText:
       "Smartphone penetration has propelled the digital economy across Kenya through hosting e-commerce, social networks and mobility applications. Hence, the need for a mobile-first approach is an absolute necessity. This is why we offer PWA development, which allow for creating fast, reliable, and engaging web pages and mobile apps in one bundle.",
     subText: `“Majority of web traffic in leading digital markets in Africa originated from mobile devices in March 2019.”`,
@@ -204,8 +204,9 @@ specialties”`,
   {
     Title: "Mobile Development",
     Type: "Full",
+    dropShadow: true,
     mainImage:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Mobile/Rectangle_281_ufwg3O056K.png",
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Rectangle_278_MGi-Ls30M.png",
     mainText:
       "Our team has created mobile applications for online health insurance. The app allows insursnce holders manage clinic appointments, medicine and health records.",
     subText: `“Custom mobile development specialties”`,
@@ -227,8 +228,9 @@ specialties”`,
   {
     Title: "Ecommerce",
     Type: "Half",
+    dropShadow: true,
     mainImage:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Mobile/Rectangle_280_dVCc8jifzq.png",
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Rectangle_281-1_74oHA5v1T.png",
     mainText:
       "Kenya has one of the most vibrant e-commerce ecosystems in Africa and has shown steady growth. Expers predict the Kenyan e-commerce market is expected to reach an market volume of USD 2 billion by 2024 (Statista).This is also said the COVID-19 lockdown period pushed more businesses to open up online shops and e-commerce in Kenya. ",
     subText: `“Expers predict the Kenyan e-commerce market is expected to reach an market volume of USD 2 billion by 2024 (Statista).”`,
