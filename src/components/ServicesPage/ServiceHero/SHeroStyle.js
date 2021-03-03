@@ -5,7 +5,8 @@ export const SHeroWrapper = styled.section`
   width: 100%;
   height: 100%;
   overflow:hidden;
-  z-index: -6
+  z-index: -6;
+  background: linear-gradient(180deg, #fde1a9 0%, #fdebc7 32.81%, #ffffff 100%);
 `;
 
 export const SHeroContainer = styled.div`
@@ -29,11 +30,12 @@ export const ImageContainer = styled.div`
 export const ImageWrapper = styled.div`
   position: relative;
   height: 100%;
+  z-index: 10;
 `;
 export const Image = styled.img`
   width: 221px;
   height: 307.3px;
-  z-index: 2;
+  z-index: 6;
 
   @media all and (min-width: 360px) {
     width: 281px;

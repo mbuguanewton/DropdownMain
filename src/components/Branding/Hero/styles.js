@@ -36,6 +36,7 @@ export const Frame2 = styled.div`
   position: absolute;
   left: ${({ widthset }) => `${widthset * 0.08}px`};
   top: -1.5rem;
+  
 @media (min-width:491px) and (max-width:767px){
   left:39.28px
 }
