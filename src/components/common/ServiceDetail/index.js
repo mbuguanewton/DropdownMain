@@ -5,7 +5,6 @@ import placeholder from "../../../assets/placeholder.png";
 import {
   TopWrapper,
   ImageWrapper,
-  Image,
   ContentDetailWrapper,
   ContentWrapper,
   ContentText,
@@ -18,7 +17,7 @@ const ServiceDetail = ({serviceData, checkId}) => {
   
     return (
       <TopWrapper>
-        <ImageWrapper>
+        <ImageWrapper picFalse={serviceData.displayfalse}>
           {serviceData.changeSize ? (
             <LazyLoadImage
               effect="blur"
@@ -32,7 +31,7 @@ const ServiceDetail = ({serviceData, checkId}) => {
             <LazyLoadImage
               effect="blur"
               placeholderSrc={placeholder}
-              className="image"
+              className={`image ${serviceData.ImageClass}`}
               src={serviceData.mainImage}
               Lbg={serviceData.mainImage}
             />

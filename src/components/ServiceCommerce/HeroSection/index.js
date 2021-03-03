@@ -6,18 +6,21 @@ import {
   ImageContainer,
   ImageWrapper,
   Image,
-  
+  Frame2,
+  Frame3,
   TextContentWrap,
   TextContentHead,
   TextContent,
 } from "./styles";
-const ServiceHeroSection = () => {
+const ServiceHeroSection = ({widthCheck}) => {
   return (
     <SHeroWrapper>
       <SHeroContainer>
         <ImageContainer>
           <ImageWrapper>
-            <Image src="https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/laptop-locifoods_f-E0S_8O9.svg" />
+            <Frame2 widthset={widthCheck} />
+            <Frame3 widthset={widthCheck} />
+            <Image src="https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Group_488_EG2Rdb4M6W.png" />
           </ImageWrapper>
         </ImageContainer>
 

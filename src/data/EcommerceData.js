@@ -20,9 +20,10 @@ export const EcommerceData = [
       "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Rectangle_278-min_Qz0EUzZRQ.png",
     mainText: `We create web stores on the basis of an in-depth understanding of your business objectives and the needs of your users. We will deliver a functional and delightful e-commerce websites that users enjoy.`,
     subText: `“We offer custom e-commerce development solutions that maximize conversions and decrease churn rate, providing web visibility for your good or service.”`,
-    serviceDetailTitle: "Custom e-commerse development services include",
+    serviceDetailTitle: "Custom e-commerce development services include",
     serviceType: "fill",
-    color: "#ffffff",
+    displayfalse: true,
+    color: "#FFF5E8",
     serviceDetail: [
       {
         Image: PWADiscovery,
@@ -51,12 +52,14 @@ export const EcommerceData = [
     Title: "PWA Web Store Development",
     Type: "Full",
     mainImage:
-      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Mobile/DC221211-5961-456D-A43E-C924ADD6F50C_1_9keu_2lr9.png",
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/DC221211-5961-456D-A43E-C924ADD6F50C_1-min_njmx_mV-6h.png",
     mainText: `Google-designed Progressive Web Applications are a series of APIs that enable the development of fast, reliable and engaging digital products with the essential features of both web pages and mobile apps. This involves offline access, push alerts, shortcuts to the home screen and functionality via a standard mobile browser.`,
     subText: `“PWA will boost the speed of your page in your store. They scale easily and give your users both mobile and offline access to your store,”`,
     serviceDetailTitle: "",
     serviceType: "fill",
     color: "#ffffff",
+    ImageClass: "office",
+    dropShadow: true,
     serviceDetail: [],
 
     BottomButton: false,

@@ -14,6 +14,19 @@ export const ImageWrapper = styled.div`
     width: 100%;
     height: 200px;
     object-fit: cover;
+    display: ${({ picFalse }) => (picFalse ? "none" : "block")};
+  }
+  .office {
+    height: 200px;
+    width: 100%;
+    
+    object-fit: center;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+    }
   }
   #img1 {
     width: 320px;
@@ -34,9 +47,9 @@ export const ImageWrapper = styled.div`
     }
   }
 
-  @media (min-width:768px) and (max-width: 1365px){
+  @media (min-width: 768px) and (max-width: 1365px) {
     width: 750px;
-    margin:auto;
+    margin: auto;
   }
 `;
 
@@ -83,6 +96,7 @@ export const ContentMainText = styled.p`
   font-weight: 400;
   text-align: left;
   font-family: Noto Sans;
+  margin-bottom:20px;
 `;
 
 export const ContentSubDetailWrapper = styled.div`
