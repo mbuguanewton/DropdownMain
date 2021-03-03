@@ -8,7 +8,7 @@ export const EcommerceServices = [
     ServiceType: "Custom E-Commerce/POS",
   },
   {
-    ServiceType: "PWA Webstore Development",
+    ServiceType: "PWA WebStore Development",
   },
 ];
 
@@ -49,7 +49,7 @@ export const EcommerceData = [
   },
 
   {
-    Title: "PWA Web Store Development",
+    Title: "PWA WebStore Development",
     Type: "Full",
     mainImage:
       "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/DC221211-5961-456D-A43E-C924ADD6F50C_1-min_njmx_mV-6h.png",
