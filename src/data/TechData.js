@@ -146,7 +146,7 @@ export const ImageData = [
     smSizeLeft: 0.05,
     mmSizeLeft: 0.05,
     mmSizeTop: "29rem",
-    mediumSizetop: "29rem",
+    mediumSizetop: "34rem",
     mediumSizeLeft: 0.16,
   },
   {

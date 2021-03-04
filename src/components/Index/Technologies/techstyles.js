@@ -22,17 +22,17 @@ export const TechTitle = styled.div`
   font-size: 21px;
   line-height: 29px;
   margin-top: 20px;
-
   @media all and (min-width: 768px) {
-    font-size: 45.47px;
+    font-size: 43.47px;
+
     line-height: 69px;
   }
-  @media all and (min-width: 1300px) {
-    width: 90%;
-    font-size: 21px;
+
+  @media all and (min-width: 1366px) {
     text-align: left;
+    width: 1090px;
     margin: auto;
-    margin-bottom: 23px;
+    font-size: 20px;
   }
 `;
 
@@ -40,10 +40,12 @@ export const TechContainer = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
-
-  @media all and (min-width: 1400px){
-    
-    width: 80%;
+  @media all and (min-width: 768px) {
+    width: 700px;
+    margin: auto;
+  }
+  @media all and (min-width: 1366px) {
+    width: 1090px;
     margin: auto;
   }
 `;
@@ -65,14 +67,14 @@ export const TechImageWrap = styled.div`
   @media all and (min-width: 768px) {
     height: ${({ MouterHeight }) => MouterHeight};
     width: ${({ MouterWidth }) => MouterWidth};
-    left: ${({ leftCalc, mmSizeLeft }) => `${leftCalc * mmSizeLeft}px`};
+    left: ${({  mmSizeLeft }) => `${700 * mmSizeLeft}px`};
     top: ${({ mmSizeTop }) => mmSizeTop};
   }
-  @media all and (min-width: 1300px) {
+  @media all and (min-width: 1366px) {
     display: flex;
     height: ${({ LouterHeight }) => LouterHeight};
     width: ${({ LouterWidth }) => LouterWidth};
-    left: ${({ leftCalc, mediumSizeLeft }) => `${leftCalc * mediumSizeLeft}px`};
+    left: ${({ mediumSizeLeft }) => `${ 1090 * mediumSizeLeft}px`};
     top: ${({ mediumSizetop }) => mediumSizetop} !important;
   }
 `;
@@ -108,17 +110,17 @@ margin:auto;
 
 export const SliderCard = styled.div`
   height: 189.72px;
-  background: #ffffff;
-  box-shadow: 0px 8.73369px 25.6449px rgba(58, 122, 68, 0.12);
+  background: #fbfbfd;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 9.7041px;
-
-  @media all and (min-width: 1400px) {
+  width: 100%;
+  @media all and (min-width: 1366px) {
     height: 300px;
-    box-shadow: 0px 8.73369px 25.6449px rgba(58, 122, 68, 0.6);
+    width: 100%;
   }
 `;
 
@@ -134,16 +136,23 @@ export const SliderHead = styled.h4`
     font-weight: 600;
     line-height: 46px;
   }
+  @media all and (min-width:1366px){
+    
+  }
 `;
 
 export const SliderText = styled.div`
   font-size: 15.42px;
-  color: #ababab; 
-  @media all and (min-width: 549px){
-  width: 504px;
-  height: 50px;
-  font-size: 21px;
-}
+  color: #ababab;
+  @media all and (min-width: 549px) {
+    width: 504px;
+    height: 50px;
+    font-size: 21px;
+  }
+  @media all and (min-width: 1366px) {
+    width: 400px;
+    margin-bottom: 40px;
+  }
 `;
 
 export const SliderNavigation = styled.div`
