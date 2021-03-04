@@ -6,15 +6,12 @@ import {
   ContentWrapper,
   ContentTitle,
   ContentImage,
-  Image,
   ContentDetails,
   ContentDetailText,
   ContentDetailServices,
   ContentDetailButton,
   DetailButton,
   ServicesContentWrapper,
-  ContentDetailOButton,
-  DetailOButton,
   Wrapper
 } from "./ServiceStyle";
 const ServicesSection = ({ serviceData }) => {
@@ -28,14 +25,15 @@ const ServicesSection = ({ serviceData }) => {
             <ContentWrapper key={data.id}>
               <ContentTitle>{data.title}</ContentTitle>
 
-              <ContentImage background={data.background} type={data.type}>
-                <Image src={data.Image} type={data.type} />
-              </ContentImage>
-              <ContentDetails type={data.type}>
-                <ContentDetailText type={data.type}>
+              <ContentImage
+                background={data.background}
+                type={data.type}
+              ></ContentImage>
+              <ContentDetails type={data.type} toptype={data.marginType}>
+                <ContentDetailText type={data.marginType}>
                   {data.text}
                 </ContentDetailText>
-                <ServicesContentWrapper>
+                <ServicesContentWrapper type={data.marginType}>
                   {data.services.map((service, index) => {
                     return (
                       <ContentDetailServices key={index}>
@@ -51,9 +49,7 @@ const ServicesSection = ({ serviceData }) => {
             </ContentWrapper>
           );
         })}
-        <ContentDetailOButton>
-          <DetailOButton>Start Now</DetailOButton>
-        </ContentDetailOButton>
+        
       </ServicesContainer>
     </Wrapper>
      

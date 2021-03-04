@@ -38,7 +38,11 @@ const Services = () => {
   return (
     <>
       <MobileMenu mobileActive={openMobileMenu} toggle={toggle} />
-      <Navigation toggle={toggle} mobileActive={openMobileMenu} />
+      <Navigation
+        menuColor="#FDE1A9"
+        toggle={toggle}
+        mobileActive={openMobileMenu}
+      />
       <ServiceHeroSection ScreenWidth={screenWidth} />
       <ServiceSolution SolutionData={SolutionData} />
       <Lists

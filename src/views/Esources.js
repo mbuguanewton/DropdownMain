@@ -36,7 +36,11 @@ const Esources = () => {
   return (
     <>
       <MobileMenu mobileActive={openMobileMenu} toggle={toggle} />
-      <Navigation toggle={toggle} mobileActive={openMobileMenu} />
+      <Navigation
+        menuColor="#FDE1A9"
+        toggle={toggle}
+        mobileActive={openMobileMenu}
+      />
       <EsourcesHeroSection widthCheck={scrollWidth} />
       <EsourceSection pressData={pressData} OpenSourceData={OpenSourceData} />
       <SupportSection />

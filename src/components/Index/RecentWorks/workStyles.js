@@ -11,7 +11,7 @@ export const WorkContainer = styled.section`
 export const Wrapper = styled.div`
 width: 100%;
 height: 100%;
-margin-bottom: 112px;
+margin-bottom: 61px;
 
 @media all and (min-width:1000px){
   margin-bottom: 112px;

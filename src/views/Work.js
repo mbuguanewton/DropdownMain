@@ -30,7 +30,11 @@ const Work = () => {
     return (
       <>
         <MobileMenu mobileActive={openMobileMenu} toggle={toggle} />
-        <Navigation toggle={toggle} mobileActive={openMobileMenu} />
+        <Navigation
+          menuColor="#FDE1A9"
+          toggle={toggle}
+          mobileActive={openMobileMenu}
+        />
         <HeroWork details={WorkTitle} widthCheck={scrollWidth} />
         <WorkSection ClientWork={ClientWork} OurProjects={OurProjects} />
         <SupportSection />

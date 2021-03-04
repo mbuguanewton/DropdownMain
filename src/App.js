@@ -9,6 +9,7 @@ import VisualIdentity from "./views/identity";
 import Esources from "./views/Esources";
 import Contact from "./views/Contact";
 import ScrollTop from "./components/ScrollToTop";
+import page404 from "./views/404";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/visual" component={VisualIdentity} exact />
           <Route path="/esources" component={Esources} exact />
           <Route path="/contact" component={Contact} exact />
+          <Route component={page404} exact/>
         </Switch>
       </Router>
     </>

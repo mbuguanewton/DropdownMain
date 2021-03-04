@@ -24,10 +24,14 @@ const Contact = () => {
   return (
     <>
       <MobileMenu mobileActive={openMobileMenu} toggle={toggle} />
-      <Navigation toggle={toggle} mobileActive={openMobileMenu} />
+      <Navigation
+        menuColor="#FEF0D4"
+        toggle={toggle}
+        mobileActive={openMobileMenu}
+      />
       <ContactHeroSection />
-      <ContactSection ContactData={ContactData} submitForm={submitForm}/>
-      
+      <ContactSection ContactData={ContactData} submitForm={submitForm} />
+
       <FooterSection FServices={FooterServices} />
     </>
   );

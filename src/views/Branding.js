@@ -35,9 +35,17 @@ const Branding = () => {
   return (
     <>
       <MobileMenu mobileActive={openMobileMenu} toggle={toggle} />
-      <Navigation toggle={toggle} mobileActive={openMobileMenu} />
+      <Navigation
+        menuColor="#FDE1A9"
+        toggle={toggle}
+        mobileActive={openMobileMenu}
+      />
       <BrandingHeroSection widthCheck={scrollWidth} />
-      <Lists listStyle='2' TabsData={BrandingServices} serviceData={BrandingData} />
+      <Lists
+        listStyle="2"
+        TabsData={BrandingServices}
+        serviceData={BrandingData}
+      />
       <FooterSection FServices={FooterServices} />
     </>
   );

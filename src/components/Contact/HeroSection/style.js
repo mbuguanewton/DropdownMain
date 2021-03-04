@@ -5,6 +5,7 @@ export const SHeroWrapper = styled.section`
   height: 100%;
   overflow: hidden;
   z-index: -6;
+  background: linear-gradient(180deg, #fef0d4 0%, #fef5e3 32.81%, #ffffff 100%);
 `;
 
 export const SHeroContainer = styled.div`

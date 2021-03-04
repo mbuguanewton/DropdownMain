@@ -2,18 +2,35 @@ import styled from 'styled-components';
 
 export const Nav = styled.nav`
   height: 70px;
-  background: rgba(249, 180, 40, 0.4);
+  background: ${({menuColor})=>(menuColor)};
   z-index: 2;
 `;
-
+export const MenuIconWrap = styled.div`
+  display: ${({ displayfalse }) => (displayfalse ? "block" : "flex")};
+  justify-content: space-between;
+  @media all and (min-width: 999px) {
+    display: none;
+  }
+`;
+export const LogoIcon = styled.div`
+  margin-left: 30px;
+  display: ${({ displayfalse }) => (displayfalse ? "none" : "block")};
+  img {
+    width: 53.42px;
+    height: 66.12px;
+    
+  }
+`;
 export const MobileIcon = styled.div`
   font-size: 2rem;
+
   height: 80px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-right: 40px;
   color: #264d2d;
+  
   width: 40px;
   float: right;
   height: 40px;

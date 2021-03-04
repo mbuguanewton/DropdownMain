@@ -48,7 +48,12 @@ const Home = () => {
   return (
     <>
       <MobileMenu mobileActive={openMobileMenu} toggle={toggle} />
-      <Navigation toggle={toggle} mobileActive={openMobileMenu} />
+      <Navigation
+      displayfalse={true}
+        menuColor="#FDE1A9"
+        toggle={toggle}
+        mobileActive={openMobileMenu}
+      />
       <HeroSection />
       <RecentWork recentData={WorkData} />
       <ServicesSection serviceData={ServicesData} />

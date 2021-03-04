@@ -10,9 +10,11 @@ export const ServicesData = [
   {
     id: 1,
     title: "Need a Website or Mobile Application?",
-    background: learnhub_bg,
-    Image: learnhub_Image,
+    background:
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Home/Group_531_3w0e8NewI.png",
+    Image: "",
     type: "screen",
+    marginType: "screen",
     text:
       "We are ready to help. No matter if you plan to build a website or mobile application from scratch... or need to scale your team. Whenever you want and always when you want, we are at your service.",
     services: [
@@ -34,9 +36,11 @@ export const ServicesData = [
   {
     id: 2,
     title: "Want To Sell online?",
-    background: sweettooth_bg,
-    Image: sweettooth_Image,
+    background:
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Home/Frame_59_1__Wd_zCkrbH.png",
+    Image: "",
     type: "mobile",
+    marginType: "screen",
     text:
       "You don’t need a physical store to sell your products. It’s easy to set up an store online. We design the UX/UI of your e-commerce store and support your businesses in integrating with existing ERP.",
     services: [
@@ -58,8 +62,9 @@ export const ServicesData = [
   {
     id: 3,
     title: "Need a Visual Brand?",
-    background: visualbrand_bg,
-    Image: visualbrand_Image,
+    background:
+      "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Home/web___mobile_app_d54cOVv-X.png",
+    Image: "",
     type: "screen",
     text:
       "Need a professional logo for your company— We design Logos and help busineses build a recognisable digital brand.",

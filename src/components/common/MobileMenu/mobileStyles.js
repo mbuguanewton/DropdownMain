@@ -8,7 +8,7 @@ export const MobileMenuContainer = styled.aside`
   opacity: ${({ mobileActive }) => (mobileActive ? "100%" : "0")};
   top: ${({ mobileActive }) => (mobileActive ? "0" : "-100%")};
   background: linear-gradient(180deg, #fde1a9 0%, #fdebc7 32.81%, #ffffff 100%);
-  z-index: 5;
+  z-index: 50;
   overflow: hidden;
   @media all and (min-width: 1000px) {
     display: none;

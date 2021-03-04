@@ -4,13 +4,14 @@ import bgImageSmall from "../../../assets/backgroundIcons/Union.svg";
 import bgImageBig from "../../../assets/backgroundIcons/BigUnion.svg";
 export const HeroWrapper = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(
     180deg,
     rgba(249, 180, 40, 0.4) 0%,
     rgba(249, 180, 40, 0.2627) 32.81%,
     rgba(249, 180, 40, 0) 100%
   );
+  margin-bottom: 80px;
   @media all and (min-width: 1000px){
     min-height: 1050px;
   }
