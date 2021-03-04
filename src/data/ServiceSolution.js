@@ -109,6 +109,7 @@ export const ServicesDetailData = [
     serviceDetailTitle: "Product design services include",
     serviceType: "fill",
     color: "rgba(255, 222, 178, 0.3)",
+    subDropShadow: true,
     serviceDetail: [
       {
         Image: productDesign,
@@ -181,6 +182,7 @@ specialties”`,
     serviceDetailTitle: "PWA development services include",
     serviceType: "fill",
     color: "rgba(255, 222, 178, 0.3)",
+    subDropShadow: true,
     serviceDetail: [
       {
         Image: PWADiscovery,
@@ -228,13 +230,16 @@ specialties”`,
   {
     Title: "Ecommerce",
     Type: "Half",
-    dropShadow: true,
+
     mainImage:
       "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Services/Rectangle_281-1_74oHA5v1T.png",
     mainText:
       "Kenya has one of the most vibrant e-commerce ecosystems in Africa and has shown steady growth. Expers predict the Kenyan e-commerce market is expected to reach an market volume of USD 2 billion by 2024 (Statista).This is also said the COVID-19 lockdown period pushed more businesses to open up online shops and e-commerce in Kenya. ",
-    subText: `“Expers predict the Kenyan e-commerce market is expected to reach an market volume of USD 2 billion by 2024 (Statista).”`,
+    subText: `“Experts predict the Kenyan e-commerce market is expected to reach an market volume of USD 2 billion by 2024 (Statista).”`,
     serviceDetail: [],
-    color: "#ffffff",
+    color: "#F7F8F7",
+    subDetailBtn: true,
+    subBtnLink: "/ecommerce",
+    subDropShadow: true,
   },
 ];

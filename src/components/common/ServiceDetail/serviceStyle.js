@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const TopWrapper = styled.div`
@@ -71,7 +72,7 @@ export const ContentDetailWrapper = styled.div`
   background: ${({bgColor})=>(bgColor)};
  box-shadow: ${({boxShadow})=>(boxShadow ? (' 7.89586px 7.89586px 20.6507px rgba(0, 0, 0, 0.129)'): ('none'))};
   border-radius: 2.71825px;
-  margin-bottom: 56px;
+  
 `;
 export const ContentWrapper = styled.div`
   font-weight: 300;
@@ -100,15 +101,37 @@ export const ContentMainText = styled.p`
 `;
 
 export const ContentSubDetailWrapper = styled.div`
-display:flex;
-justify-content:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:268px;
+  
+  margin-bottom: 56px;
+  box-shadow: ${({ dropShadow }) =>
+    dropShadow ? "7.13624px 7.13624px 18.664px rgba(0, 0, 0, 0.129)" : "none"};
 `;
 
 export const ContentSubText = styled.p`
 text-align:center;
 width: 80%;
+margin:auto;
+
 font-weight: 400px;
 line-height:24px;
 font-size:20px;
+
+`;
+
+export const DetailButton = styled(Link)`
+  text-decoration: none;
+  color: #3a7a44;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: auto;
+`;
+export const BtnText = styled.p`
+  margin-right: 4px;
 `;
 

@@ -8,11 +8,13 @@ import  Work  from "./views/Work";
 import VisualIdentity from "./views/identity";
 import Esources from "./views/Esources";
 import Contact from "./views/Contact";
+import ScrollTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollTop />
         <GlobalStyle />
         <Switch>
           <Route path="/" component={Home} exact />

@@ -60,7 +60,7 @@ export const TabsContent = styled(ScrollLink)`
   @media (min-width: 768px) and (max-width: 1356px) {
     text-align: left;
 
-    width: ${({ TabStyle }) => (TabStyle === "services" ? "255px" : "350px")};
+    width: ${({ tabstyle }) => (tabstyle === "services" ? "255px" : "350px")};
     display: block;
     margin: 0;
     font-size: 25px;

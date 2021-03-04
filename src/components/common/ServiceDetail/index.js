@@ -1,5 +1,6 @@
 import React from 'react';
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { FaArrowRight } from "react-icons/fa";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import placeholder from "../../../assets/placeholder.png";
 import {
@@ -12,6 +13,8 @@ import {
   ContentMainText,
   ContentSubDetailWrapper,
   ContentSubText,
+  DetailButton,
+  BtnText,
 } from "./serviceStyle";
 const ServiceDetail = ({serviceData, checkId}) => {
   
@@ -33,11 +36,13 @@ const ServiceDetail = ({serviceData, checkId}) => {
               placeholderSrc={placeholder}
               className={`image ${serviceData.ImageClass}`}
               src={serviceData.mainImage}
-             
             />
           )}
 
-          <ContentDetailWrapper boxShadow={serviceData.dropShadow} bgColor={serviceData.color}>
+          <ContentDetailWrapper
+            boxShadow={serviceData.dropShadow}
+            bgColor={serviceData.color}
+          >
             <ContentWrapper>
               <ContentText>{serviceData.Title}</ContentText>
             </ContentWrapper>
@@ -48,8 +53,13 @@ const ServiceDetail = ({serviceData, checkId}) => {
           </ContentDetailWrapper>
         </ImageWrapper>
 
-        <ContentSubDetailWrapper>
+        <ContentSubDetailWrapper dropShadow={serviceData.subDropShadow}>
           <ContentSubText>{serviceData.subText}</ContentSubText>
+          {serviceData.subDetailBtn && (
+            <DetailButton to={serviceData.subBtnLink}>
+              <BtnText>Learn more</BtnText> <FaArrowRight />
+            </DetailButton>
+          )}
         </ContentSubDetailWrapper>
       </TopWrapper>
     );

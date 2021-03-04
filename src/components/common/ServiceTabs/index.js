@@ -14,7 +14,7 @@ const ServiceTab = ({TabStyle, TabData, listStyle}) => {
           {TabData.map((data, index) => {
             return (
               <TabsContent
-                TabStyle={TabStyle}
+                tabstyle={TabStyle}
                 key={index}
                 to={data.ServiceType}
                 smooth={true}

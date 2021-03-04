@@ -131,9 +131,11 @@ width: 100%;
 
 export const TextContentHead = styled.div`
   font-weight: 600;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
   color: #264d2d;
+  width:94%;
+  margin:auto;
   margin-bottom: 20px;
 
   @media all and (min-width:768px){
@@ -142,9 +144,9 @@ export const TextContentHead = styled.div`
 `;
 
 export const TextContent = styled.p`
-  line-height: 34px;
+  line-height: 30px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   width: 80%;
   margin: auto;
   color: #151515;
