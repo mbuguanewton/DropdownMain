@@ -24,16 +24,18 @@ export const WorkTitle = styled.div`
   font-weight: bold;
   font-size: 21px;
   line-height: 29px;
-  @media all and (min-width: 1000px) {
-    font-size: 45.47px;
+  margin-top: 20px;
+  @media all and (min-width: 768px) {
+    font-size: 43.47px;
+
     line-height: 69px;
   }
-  @media all and (min-width: 1300px) {
+
+  @media all and (min-width: 1366px) {
     text-align: left;
-    width: 90%;
-    font-size: 21px;
+    width: 1090px;
     margin: auto;
-    margin-bottom: 23px;
+    font-size: 20px;
   }
 `;
 export const WorkWrapper = styled.div`
@@ -41,18 +43,22 @@ export const WorkWrapper = styled.div`
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 2rem;
 
- 
-  @media all and (min-width: 1300px) {
-    width: 90%;
+  @media all and (min-width: 1200px) {
+    position: relative;
+    width: 1000px;
+    margin: auto;
+  }
+
+  @media all and (min-width: 1366px) {
+    width: 1090px;
     margin: auto;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1.3fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "erp loci"
       "insp loci";
 
-    grid-column-gap: 30px;
-    
+    grid-column-gap: 28px;
   }
 `;
 
@@ -64,10 +70,11 @@ export const ContentContainer = styled.div`
   position: relative;
   text-align: center;
   border-radius: 2px;
-  @media all and (min-width: 1000px) {
+  @media all and (min-width: 1200px) {
+    width:100%;
   }
 
-  @media all and (min-width: 1300px) {
+  @media all and (min-width: 1366px) {
     width: 100%;
     grid-area: ${({ area }) => {
       if (area === "loci") {
@@ -86,8 +93,10 @@ export const ContentContainer = styled.div`
 export const ContentWrapper = styled.div`
   padding-top: 60px;
   padding-bottom: 19px;
-  @media all and (min-width: 1300px) {
+  @media all and (min-width: 1366px) {
     padding-top: ${({ area }) => (area === "loci" ? "200px" : "60px")};
+    width:
+   
   }
 `;
 export const ImageWrapper = styled.div``;
@@ -103,9 +112,10 @@ export const Image = styled.img`
     object-fit: cover;
   }
 
-  @media all and (min-width: 1300px) {
+  @media all and (min-width: 1366px) {
     height: ${({ area }) => (area === "loci" ? "481px" : "250px")};
-    width: ${({ area }) => (area === "loci" ? "755px" : "390px")};
+    width: ${({ area }) => (area === "loci" ? "555px" : "390px")};
+    object-fit: contain;
   }
 `;
 
@@ -119,8 +129,8 @@ export const LinkWrapper = styled.div`
     width: 460px;
   }
 
-  @media all and (min-width: 1300px) {
-    width: ${({ area }) => (area === "loci" ? "700px" : "370px")};
+  @media all and (min-width: 1366px) {
+    width: ${({ area }) => (area === "loci" ? "500px" : "370px")};
   }
 `;
 
