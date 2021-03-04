@@ -16,8 +16,8 @@ height: 100%;
 margin:auto;
 margin-bottom: 412px;
 
-@media all and (min-width:1300px){
-  width: 87%;
+@media all and (min-width:1366px){
+  width: 1090px;
 }
 `;
 export const ProcessTitle = styled.div`
@@ -28,35 +28,33 @@ export const ProcessTitle = styled.div`
   font-size: 21px;
   line-height: 29px;
   margin-top: 20px;
-  margin-bottom: 100px;
-
   @media all and (min-width: 768px) {
-    font-size: 35.47px;
+    font-size: 43.47px;
+
     line-height: 69px;
-    margin-bottom: 100px;
   }
-  @media all and (min-width: 1300px) {
-    width: 90%;
-    font-size: 21px;
+
+  @media all and (min-width: 1366px) {
     text-align: left;
+    width: 1090px;
     margin: auto;
-    margin-bottom: 23px;
+    font-size: 20px;
   }
 `;
 export const ProcessTextWrap = styled.div`
-width: 90%;
+width:1090px;
 margin: auto;
 `;
 export const ProcessText = styled.p`
 display: none;
 
-@media all and (min-width: 1300px){
+@media all and (min-width: 1366px){
   display:block;
   width: 827px;
   height: 62px;
   font-weight: 500;
-  font-size: 33px;
-  line-height: 26px;
+  font-size: 28px;
+  line-height: 40px;
   
   margin-bottom: 50px;
 }
@@ -67,6 +65,9 @@ width: 90%;
 margin: auto;
 @media all and (min-width:1000px){
   width: 900px;
+}
+@media all and (min-width:1366px){
+  width: 1090px;
 }
 `;
 
@@ -86,9 +87,10 @@ export const ProcessImageWrapper = styled.div`
     left: ${({ mediumSizeLeft }) => `${1000 * mediumSizeLeft}px`};
     top: ${({ mediumSizetop }) => mediumSizetop};
   }
-  @media all and (min-width: 1300px) {
+  @media all and (min-width: 1366px) {
     left: ${({ LSizeLeft }) => `${1000 * LSizeLeft}px`};
     top: ${({ LSizetop }) => LSizetop};
+    
   }
 `;
 

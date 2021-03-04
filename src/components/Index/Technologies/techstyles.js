@@ -149,6 +149,9 @@ export const SliderText = styled.div`
     height: 50px;
     font-size: 21px;
   }
+  @media all and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
   @media all and (min-width: 1366px) {
     width: 400px;
     margin-bottom: 40px;
