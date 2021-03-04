@@ -1,11 +1,4 @@
-import learnhub_Image from '../assets/Images/learnhub.png';
-import learnhub_bg from '../assets/Images/Background/learnhub.png';
 
-import sweettooth_Image from '../assets/Images/SweetTooth.png';
-import sweettooth_bg from '../assets/Images/Background/sweetTooth.png';
-
-import visualbrand_Image from '../assets/Images/VisualImage.png';
-import visualbrand_bg from '../assets/Images/Background/VisualBrand.png';
 export const ServicesData = [
   {
     id: 1,
