@@ -30,7 +30,7 @@ const HeroSection = () => {
           <ContentSubText>Get your free quotation.</ContentSubText>
         </ContentSection>
         <ButtonWrapper>
-          <Button>Get A Estimate</Button>
+          <Button to='/contact'>Get An Estimate</Button>
         </ButtonWrapper>
       </HeroContainer>
     </HeroWrapper>

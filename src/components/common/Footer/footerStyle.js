@@ -64,7 +64,12 @@ export const SocialMediaPlatforms = styled.div`
   justify-content: space-between;
   margin-top: 16px;
 
-  color: green;
+  color: #264d2d;
+
+  a {
+    text-decoration: none;
+    color: #264d2d;
+  }
 
   @media all and (min-width: 413px) {
     width: 210px;

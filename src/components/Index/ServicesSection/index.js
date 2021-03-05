@@ -42,7 +42,7 @@ const ServicesSection = ({ serviceData }) => {
                     );
                   })}
                   <ContentDetailButton>
-                    <DetailButton>{data.buttonText}</DetailButton>
+                    <DetailButton to={data.buttonLink}>{data.buttonText}</DetailButton>
                   </ContentDetailButton>
                 </ServicesContentWrapper>
               </ContentDetails>

@@ -126,10 +126,10 @@ export const Content = styled.h4`
     height: 73px;
   }
   @media all and (min-width: 1000px) {
-    font-size: 50px;
+    font-size: 40px;
     height: 128px;
     width: 717px;
-    line-height: 64px;
+    line-height: 54px;
   }
 `;
 
@@ -143,7 +143,7 @@ export const ContentSubText = styled.p`
   width: 290px;
 
   @media all and (min-width: 1000px) {
-    font-size: 27px;
+    font-size: 25px;
     width: 561px;
   }
 `;

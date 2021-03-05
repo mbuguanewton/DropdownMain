@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 import Logo from "../../../assets/Icons/AleroLogo.svg";
 import {
   Wrapper,
@@ -35,10 +36,37 @@ const FooterSection = ({ FServices }) => {
           </ContactDetails>
 
           <SocialMediaPlatforms>
-            <FaTwitter />
-            <FaFacebook />
-            <FaLinkedin />
-            <FaInstagram />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/alerogroup"
+            >
+              <FaTwitter />
+            </a>
+
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/alerogroup/"
+            >
+              <FaFacebook />
+            </a>
+
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/company/alerogroup"
+            >
+              <FaLinkedin />
+            </a>
+
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/invites/contact/?i=5mc78ybmpyft&utm_content=ehp63qs"
+            >
+              <AiFillInstagram />
+            </a>
           </SocialMediaPlatforms>
         </CompanyDetails>
 
@@ -78,5 +106,3 @@ const FooterSection = ({ FServices }) => {
 };
 
 export { FooterSection };
-
-

@@ -25,6 +25,7 @@ export const ServicesData = [
       },
     ],
     buttonText: "Learn more...",
+    buttonLink: "/services",
   },
   {
     id: 2,
@@ -51,6 +52,7 @@ export const ServicesData = [
       },
     ],
     buttonText: "Learn more...",
+    buttonLink: "/ecommerce",
   },
   {
     id: 3,
@@ -73,5 +75,6 @@ export const ServicesData = [
       },
     ],
     buttonText: "Learn more...",
+    buttonLink: "/branding",
   },
 ];

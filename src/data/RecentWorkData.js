@@ -9,6 +9,7 @@ export const WorkData = [
     Image:
       "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Home/LocifoodEcommerse_h9ZLRnbJJC.png",
     area: "loci",
+    buttonLink: "/rr",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const WorkData = [
     Image:
       "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Home/Jireh_1hcnwvoP-.png",
     area: "erp",
+    buttonLink: "/ecommerce",
   },
   {
     id: 3,
@@ -27,5 +29,6 @@ export const WorkData = [
       "https://ik.imagekit.io/dk30bxu4rix/Website/assets/images/Home/Brickom_ComoqHvZD.png",
     name: "Inspiration",
     area: "insp",
+    buttonLink: "/work",
   },
 ];

@@ -27,7 +27,7 @@ const RecentWork = ({recentData}) => {
             <Image area={data.area} src={data.Image}/>
           </ImageWrapper>
           <LinkWrapper area={data.area}>
-            <LinkTo >
+            <LinkTo to={data.buttonLink}>
               {data.name} <Arrow src={ArrowTo}/>
             </LinkTo>
           </LinkWrapper>
