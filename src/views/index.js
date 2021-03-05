@@ -4,8 +4,7 @@ import React, { useState, useEffect } from "react";
 import {
   MobileMenu,
   Navigation,
-  FooterSection,
-  SupportSection,
+
 } from "../components/common";
 import {
   HeroSection,
@@ -54,18 +53,7 @@ const Home = () => {
         toggle={toggle}
         mobileActive={openMobileMenu}
       />
-      <HeroSection />
-      <RecentWork recentData={WorkData} />
-      <ServicesSection serviceData={ServicesData} />
-      <TechSection
-        LogoData={ImageData}
-        leftCalc={scrollWidth}
-        InfoData={InfoData}
-      />
-      <ProcessSection leftCalc={scrollWidth} ProcessData={ProcessData} />
-      <TestimonySection TestimonyData={Testimonies} />
-      <SupportSection />
-      <FooterSection FServices={FooterServices} />
+      
     </>
   );
 };
