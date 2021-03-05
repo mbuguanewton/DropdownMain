@@ -13,6 +13,15 @@ export const SHeroContainer = styled.div`
   width: 100%;
   height: 100%;
   margin-bottom: 112px;
+
+  @media all and (min-width: 1366px){
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Text Image";
+    justify-content:center;
+    align-items:center;
+
+  }
  
 `;
 
@@ -25,6 +34,9 @@ export const ImageContainer = styled.div`
   margin: auto;
   @media all and (min-width: 360px) {
     margin-top: 20px;
+  }
+  @media all and (min-width: 1366px){
+    grid-area: Image;
   }
 `;
 export const ImageWrapper = styled.div`
@@ -126,7 +138,10 @@ export const Frame3 = styled.div`
 `;
 
 export const TextContentWrap = styled.div`
-width: 100%;
+  width: 100%;
+  @media all and (min-width: 1366px) {
+    grid-area: Text;
+  }
 `;
 
 export const TextContentHead = styled.div`

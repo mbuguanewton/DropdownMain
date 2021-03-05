@@ -58,7 +58,8 @@ export const WorkWrapper = styled.div`
       "erp loci"
       "insp loci";
 
-    grid-column-gap: 28px;
+    grid-column-gap: 15px;
+    grid-row-gap: 14px;
   }
 `;
 
@@ -94,7 +95,7 @@ export const ContentWrapper = styled.div`
   padding-top: 60px;
   padding-bottom: 19px;
   @media all and (min-width: 1366px) {
-    padding-top: ${({ area }) => (area === "loci" ? "200px" : "60px")};
+    padding-top: ${({ area }) => (area === "loci" ? "90px" : "30px")};
     width:
    
   }
@@ -113,8 +114,8 @@ export const Image = styled.img`
   }
 
   @media all and (min-width: 1366px) {
-    height: ${({ area }) => (area === "loci" ? "481px" : "250px")};
-    width: ${({ area }) => (area === "loci" ? "555px" : "390px")};
+    height: ${({ area }) => (area === "loci" ? "481px" : "210px")};
+    width: ${({ area }) => (area === "loci" ? "455px" : "350px")};
     object-fit: contain;
   }
 `;
@@ -130,7 +131,7 @@ export const LinkWrapper = styled.div`
   }
 
   @media all and (min-width: 1366px) {
-    width: ${({ area }) => (area === "loci" ? "500px" : "370px")};
+    width: ${({ area }) => (area === "loci" ? "400px" : "330px")};
   }
 `;
 

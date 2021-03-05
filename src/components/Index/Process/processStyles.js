@@ -102,7 +102,7 @@ export const ProcessImage = styled.img`
     width: 169px;
     height: 169px;
   }
-  @media all and (min-width: 1300px) {
+  @media all and (min-width: 1366px) {
     width: 200px;
     height: 200px;
   }
@@ -117,7 +117,7 @@ export const ProcessContent = styled.div`
     font-size: 18px;
     width: 80%;
   }
-  @media all and (min-width: 1300px) {
+  @media all and (min-width: 1366px) {
     width: 100%;
   }
 `;
@@ -131,7 +131,7 @@ export const BgLineImage = styled.div`
 
 export const BgImage = styled.img`
   width: 100%;
-  @media all and (min-width: 1300px){
+  @media all and (min-width: 1366px){
     height: 140px;
     width: 945px;
   }
