@@ -1,5 +1,5 @@
 import React from "react";
-import aleroLogo from '../../../assets/Images/AleroLogo/icon.svg';
+
 import { FiMenu } from "react-icons/fi";
 import { NavData } from "../../../data/NavigationData";
 import SubMenu from "../SubMenu";
@@ -18,7 +18,7 @@ const Navigation = ({ toggle, mobileActive, menuColor, displayfalse }) => {
     <Nav menuColor={menuColor}>
       <MenuIconWrap displayfalse={displayfalse}>
         <LogoIcon displayfalse={displayfalse}>
-          <img src={aleroLogo} alt="Alero" />
+          <img src='' alt="Alero" />
         </LogoIcon>
         <MobileIcon activeMobile={mobileActive}>
           <FiMenu onClick={toggle} />
