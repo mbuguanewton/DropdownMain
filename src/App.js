@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Router>
-        <ScrollTop />
+       
         <GlobalStyle />
         <Switch>
           <Route path="/" component={Home} exact />

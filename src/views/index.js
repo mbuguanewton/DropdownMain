@@ -6,22 +6,9 @@ import {
   Navigation,
 
 } from "../components/common";
-import {
-  HeroSection,
-  ProcessSection,
-  RecentWork,
-  ServicesSection,
-  TechSection,
-  TestimonySection,
-  
-} from "../components/Index";
 
-import { WorkData } from "../data/RecentWorkData";
-import { ServicesData } from "../data/ServicesData";
-import { ImageData, InfoData } from "../data/TechData";
-import { ProcessData } from "../data/ProcessData";
-import { Testimonies } from "../data/TestimoniesData";
-import { FooterServices } from "../data/footerData";
+
+
 const Home = () => {
   const [openMobileMenu, setMobileMenu] = useState(false);
   const [scrollWidth, setScrollWidth] = useState();

@@ -1,8 +1,7 @@
 import React from "react";
 import SubMenu from "./subnav";
 import { NavData } from "../../../data/NavigationData";
-import Imagesrc from "../../../assets/backgroundIcons/Union.svg";
-import Cancel from "../../../assets/Icons/cancel.svg";
+
 import {
   MobileMenuContainer,
   HeaderSection,
@@ -19,12 +18,12 @@ const MobileMenu = ({ mobileActive, toggle }) => {
   return (
     <MobileMenuContainer mobileActive={mobileActive}>
       <BgWrap>
-        <BackgroundImage src={Imagesrc} />
+        <BackgroundImage src='' />
       </BgWrap>
 
       <HeaderSection>
         <Icon>
-          <CancelIcon src={Cancel} onClick={toggle} />
+          <CancelIcon src='' onClick={toggle} />
         </Icon>
       </HeaderSection>
 
