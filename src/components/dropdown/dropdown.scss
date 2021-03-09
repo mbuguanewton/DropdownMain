@@ -1,0 +1,28 @@
+.dropdown {
+    padding: 10px;
+    cursor: pointer;
+    width: 10%;
+    height: 5vh;
+    position: relative;
+
+    &__label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        .icon {
+            margin-left: 16px;
+        }
+    }
+
+    &__children {
+        background: #eee;
+        border-radius: 5px;
+        height: auto;
+        padding: 10px;
+        position: absolute;
+        width: 100%;
+        margin: 14px 0;
+    }
+}
